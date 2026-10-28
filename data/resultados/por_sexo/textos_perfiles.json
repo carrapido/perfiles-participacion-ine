@@ -1,0 +1,150 @@
+{
+  "_nota": "Textos copiados del documento técnico (Claude Docs) el 28 de octubre de 2026. Las cifras numéricas de los gráficos del sitio deben salir de los CSV; estos textos se muestran tal cual. Si cambias una cifra aquí, cámbiala también en el documento.",
+  "perfiles": [
+    {
+      "orden": 1,
+      "grupo_csv": "hombres_1",
+      "nombre": "Hombres en rezago persistente",
+      "sexo": "hombres",
+      "color": "#2A78D6",
+      "resumen": "Hombres de 18 a 59 años con participación baja y plana; no reaccionan ni a las elecciones presidenciales.",
+      "quienes": "El 30% de los hombres del país, casi todos de 18 a 59 años (97%). Agrupa a más de un tercio de los hombres de 18 a 44 años. El 30% de su lista nominal vive en secciones rurales y el 18% en mixtas.",
+      "como_votan": "Promedio de 49.9%, plano (−0.5 puntos por elección). Apenas suben cuando se elige presidente (+6.4 puntos). Votan 10.9 puntos menos que las mujeres de su edad y municipio, la mayor distancia de todos los perfiles. En 2024 votó el 48.2%, menos que en 2012 (56.1%).",
+      "donde": "En Colima, Nuevo León, Querétaro, Sonora y Campeche agrupa a más del 80% de los hombres.",
+      "lectura": "No responden ni al estímulo de una elección presidencial, así que su alejamiento es estructural. En esas mismas entidades casi todas las mujeres son de voto constante: el electorado se parte en dos por sexo.",
+      "objetivo": "Que voten en cualquier tipo de elección. La palanca es la facilidad y los pares, no la importancia de la elección.",
+      "estrategias": [
+        {
+          "estrategia": "\"Votar es rápido y está cerca\": dónde está tu casilla y cuánto tarda votar",
+          "canal": "Centros de trabajo, transporte y radio local; dos semanas antes y el día de la elección",
+          "indicador": "Participación del perfil en 2027 contra 45.8% en 2021"
+        },
+        {
+          "estrategia": "Mensajes con voces de hombres de la comunidad (deportistas, líderes locales)",
+          "canal": "Ligas deportivas municipales y redes sociales locales; temporada previa",
+          "indicador": "Ventaja frente al otro sexo, hoy de −10.9 puntos"
+        },
+        {
+          "estrategia": "Priorizar los distritos donde el perfil agrupa a la mayoría de los hombres",
+          "canal": "Juntas Distritales Ejecutivas de Sonora, Nuevo León, Colima, Campeche y Querétaro",
+          "indicador": "Brecha municipal en esos distritos"
+        }
+      ]
+    },
+    {
+      "orden": 2,
+      "grupo_csv": "hombres_0",
+      "nombre": "Hombres de voto presidencial",
+      "sexo": "hombres",
+      "color": "#E8693A",
+      "resumen": "Hombres de 18 a 59 años, sobre todo urbanos, que votan en las presidenciales y se ausentan en las intermedias.",
+      "quienes": "El 46% de los hombres, el perfil masculino más grande. Seis de cada diez hombres de 18 a 44 años están aquí. El 84% de su lista nominal vive en secciones urbanas.",
+      "como_votan": "El nivel más bajo (44.5%) y un ciclo muy fuerte (+17.3 puntos). En las presidenciales vota alrededor de la mitad (entre 50% y 55%); en las intermedias cae a entre 33% y 41%. Su tendencia es ligeramente positiva (+1.8 puntos por elección).",
+      "donde": "Baja California (85% de los hombres), Coahuila y Ciudad de México (78%), Tlaxcala (77%) y Chihuahua (76%).",
+      "lectura": "Sí vota cuando percibe que la elección importa. Su reto es la elección intermedia.",
+      "objetivo": "Reducir su caída en las intermedias. Ya votan cuando la elección les parece importante; el mensaje debe mostrar qué se decide en 2027.",
+      "estrategias": [
+        {
+          "estrategia": "\"En 2027 también se decide\": qué cargos se eligen y qué cambia en su ciudad",
+          "canal": "Plataformas digitales y de video; periodo de campañas de la intermedia",
+          "indicador": "Participación del perfil en 2027 contra 40.5% en 2021"
+        },
+        {
+          "estrategia": "Alianzas con empleadores para facilitar el tiempo para votar",
+          "canal": "Parques industriales y empresas de Chihuahua, Baja California y Coahuila",
+          "indicador": "Participación de hombres de 18 a 44 años en esas entidades"
+        },
+        {
+          "estrategia": "Recordatorios masivos sin datos personales",
+          "canal": "Transporte público, pantallas urbanas y redes; la semana de la elección",
+          "indicador": "Ciclo presidencial del perfil, hoy de +17.3 puntos"
+        }
+      ]
+    },
+    {
+      "orden": 3,
+      "grupo_csv": "hombres_2",
+      "nombre": "Hombres mayores comprometidos",
+      "sexo": "hombres",
+      "color": "#1FB07A",
+      "resumen": "Hombres de 45 años o más que votan tanto como las mujeres de su edad; la participación más alta de los cinco perfiles.",
+      "quienes": "El 24% de los hombres. Agrupa a 9 de cada 10 hombres de 60 a 69 años, a casi todos los de 70 o más y a una cuarta parte de los de 45 a 59. El 23% vive en secciones rurales.",
+      "como_votan": "El promedio más alto de los cinco perfiles (65.2%), con tendencia al alza (+2.5 puntos por elección) y un ciclo moderado (+11.5). En 2024 votó el 71.7%. Votan igual que las mujeres de su edad y municipio (−0.1 puntos): en este perfil la brecha desaparece.",
+      "donde": "Yucatán (50% de los hombres), Guerrero y Chiapas (37%), Veracruz (35%) y Oaxaca (30%), aunque está presente en 2,035 municipios.",
+      "lectura": "Es el hábito de voto de las generaciones mayores. Explica por qué la ventaja femenina se invierte en las edades avanzadas, y es un aliado natural para acercar a los hombres jóvenes a las urnas.",
+      "objetivo": "Conservar su participación y aprovecharla para acercar a las urnas a los hombres jóvenes de sus familias y comunidades.",
+      "estrategias": [
+        {
+          "estrategia": "\"Tu voto también enseña\": invitarlos a ir a votar con hijos y nietos",
+          "canal": "Centros comunitarios, radio local y espacios para personas adultas mayores; la semana de la elección",
+          "indicador": "Participación de los hombres de 18 a 44 años en sus municipios"
+        },
+        {
+          "estrategia": "Casillas accesibles para personas mayores",
+          "canal": "Juntas Distritales de Yucatán, Guerrero, Chiapas, Veracruz y Oaxaca; planeación de casillas",
+          "indicador": "Mantener su participación por encima del 70%"
+        },
+        {
+          "estrategia": "Invitarlos a ser funcionarios de casilla y observadores electorales",
+          "canal": "Capacitación electoral del INE; reclutamiento previo a la jornada",
+          "indicador": "Participación del perfil en la intermedia, contra 65.6% en 2021"
+        }
+      ]
+    },
+    {
+      "orden": 4,
+      "grupo_csv": "mujeres_1",
+      "nombre": "Mujeres urbanas en ascenso",
+      "sexo": "mujeres",
+      "color": "#12366B",
+      "resumen": "Mujeres de todas las edades en ciudades; suben en cada elección y tienen el mayor efecto presidencial.",
+      "quienes": "El 55% de las mujeres del país, de todas las edades: 6 de cada 10 mujeres de 18 a 34 años y 7 de cada 10 de 70 o más. El 82% vive en secciones urbanas.",
+      "como_votan": "La mayor tendencia al alza (+2.7 puntos por elección) y el mayor ciclo presidencial de los cinco perfiles (+18.3 puntos). Pasaron de 40.9% en 2009 a 63.2% en 2024, pero en la intermedia de 2021 cayeron a 51.6%. Votan 6.1 puntos más que los hombres de su edad y municipio.",
+      "donde": "Baja California y Ciudad de México (100% de las mujeres), Chihuahua (98%), Tlaxcala (97%) y Aguascalientes (88%).",
+      "lectura": "Su crecimiento, junto con la participación plana de los hombres en rezago persistente, es lo que amplía la brecha nacional. Aun así, su voto todavía depende del ciclo presidencial.",
+      "objetivo": "Que su alza no dependa de la elección presidencial y que su ejemplo llegue a los hombres de su entorno.",
+      "estrategias": [
+        {
+          "estrategia": "Presentar la intermedia como continuidad de su participación de 2024",
+          "canal": "Redes sociales, escuelas y mercados; campañas de la intermedia",
+          "indicador": "Participación del perfil en 2027 contra 51.6% en 2021"
+        },
+        {
+          "estrategia": "\"Vota y lleva a alguien\": promotoras del voto en el hogar y la comunidad",
+          "canal": "Redes comunitarias en Ciudad de México, Baja California, Chihuahua y Tlaxcala",
+          "indicador": "Participación de los hombres de 18 a 44 años en sus municipios"
+        }
+      ]
+    },
+    {
+      "orden": 5,
+      "grupo_csv": "mujeres_0",
+      "nombre": "Mujeres de voto constante",
+      "sexo": "mujeres",
+      "color": "#D6517E",
+      "resumen": "Mujeres de todas las edades que votan en cualquier tipo de elección, en ciudades y en el campo.",
+      "quienes": "El 45% de las mujeres, de todas las edades, con más peso entre los 45 y los 59 años. Una de cada cuatro vive en secciones rurales: aquí está la mayoría de las mujeres rurales del país.",
+      "como_votan": "Promedio de 63.6%, sin tendencia (+0.6) y con un ciclo bajo (+8.2 puntos). No bajan de 55%, ni en las intermedias. Votan 8.5 puntos más que los hombres de su edad y municipio: es donde la brecha es más amplia.",
+      "donde": "Colima (100% de las mujeres), Nuevo León (99%), Campeche (98%), Querétaro (96%) y Sonora (94%).",
+      "lectura": "Es el núcleo estable del electorado: vota por hábito, no por coyuntura. Las cinco entidades donde más pesa eligieron gubernatura en las intermedias de 2015 y 2021, lo que sugiere que una elección local el mismo día ayuda a sostener su voto.",
+      "objetivo": "Mantener su nivel con poca inversión, aprovecharlas como puente con las generaciones jóvenes y cuidar las condiciones de voto en lo rural.",
+      "estrategias": [
+        {
+          "estrategia": "Recordatorios de bajo costo que reconozcan su constancia",
+          "canal": "Medios tradicionales y redes; la semana de la elección",
+          "indicador": "Mantener su nivel por encima del 63%"
+        },
+        {
+          "estrategia": "Invitarlas a ser funcionarias de casilla, observadoras o promotoras con los jóvenes de su familia",
+          "canal": "Capacitación electoral del INE y centros comunitarios; reclutamiento previo a la jornada",
+          "indicador": "Participación de las personas de 18 a 34 años en sus municipios"
+        },
+        {
+          "estrategia": "Garantizar casillas cercanas y materiales en lenguas indígenas en las secciones rurales, donde vive una de cada cuatro",
+          "canal": "Juntas Locales y Distritales; planeación de casillas",
+          "indicador": "Participación del perfil en secciones rurales"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "anio": "PJ2025",
+  "archivo": "data/agregados/agg_PJ2025.csv",
+  "filas": 188311,
+  "entidades": 31,
+  "entidades_esperadas": 31,
+  "claves_faltantes": [
+    4
+  ],
+  "completo": true,
+  "LN": 99094375,
+  "SV": 12720228,
+  "NV": 85090368,
+  "NS": 1283779,
+  "NS_pct": 1.3,
+  "participacion_hombres": 12.27,
+  "participacion_mujeres": 13.69,
+  "registros_no_binario_LN": 281,
+  "filas_sin_grupo_edad": 0,
+  "DEF_vacio_LN_pct": 0.0
+}

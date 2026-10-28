@@ -1,0 +1,19 @@
+{
+  "anio": "2021",
+  "archivo": "data/agregados/agg_2021.csv",
+  "filas": 188617,
+  "entidades": 32,
+  "entidades_esperadas": 32,
+  "claves_faltantes": [],
+  "completo": true,
+  "LN": 93532133,
+  "SV": 46389189,
+  "NV": 43099624,
+  "NS": 4043320,
+  "NS_pct": 4.32,
+  "participacion_hombres": 47.76,
+  "participacion_mujeres": 55.62,
+  "registros_no_binario_LN": 0,
+  "filas_sin_grupo_edad": 0,
+  "DEF_vacio_LN_pct": 0.0
+}

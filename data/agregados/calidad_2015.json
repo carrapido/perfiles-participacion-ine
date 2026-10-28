@@ -1,0 +1,19 @@
+{
+  "anio": "2015",
+  "archivo": "data/agregados/agg_2015.csv",
+  "filas": 186627,
+  "entidades": 32,
+  "entidades_esperadas": 32,
+  "claves_faltantes": [],
+  "completo": true,
+  "LN": 83563462,
+  "SV": 36926612,
+  "NV": 41517874,
+  "NS": 5118976,
+  "NS_pct": 6.13,
+  "participacion_hombres": 42.95,
+  "participacion_mujeres": 50.89,
+  "registros_no_binario_LN": 0,
+  "filas_sin_grupo_edad": 0,
+  "DEF_vacio_LN_pct": 0.0
+}

@@ -1,0 +1,25 @@
+# Datos crudos del INE (más de 2.5 GB): se descargan de la plataforma CCPC
+GOOGLE_COLAB_HCKTN/
+descargas/
+/externos/
+*.zip
+_to_delete/
+
+# Python y notebooks
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.pytest_cache/
+
+# Sitio web
+node_modules/
+web/dist/
+
+# Notas internas del equipo: viven en ~/Desktop/INE-PROYECTO-MDs/
+/ARRANQUE.md
+/CLAUDE.md
+/objetivos.md
+/resume.md
+
+# Sistema
+.DS_Store
