@@ -1,6 +1,6 @@
 # Perfiles de participación ciudadana
 
-Proyecto del equipo **Utrinos** (Jorge González Mollinedo y Brandon Campos Buendía) para el Reto 1 del hackatón del INE "Hackea la participación".
+Proyecto del equipo **Utrinos** para el Reto 1 del hackatón del INE "Hackea la participación".
 
 Agrupa a la ciudadanía en cinco perfiles de participación electoral con los Conteos Censales de Participación Ciudadana (CCPC) del INE de las elecciones federales de 2009 a 2024, y los valida con la elección judicial de 2025. Incluye un sitio web con un mapa de México por municipio, un panel que cambia con el zoom y una ficha por perfil.
 
