@@ -6,6 +6,7 @@ import { sexoConArticulo } from './compartido/sexoConArticulo.ts'
 import { cargarDatosDelMapa, type DatosDelMapa, type Sexo } from './datos/datosDelMapa.ts'
 import { nombreDeEleccion, opcionesDeEleccion } from './datos/elecciones.ts'
 import { buscadorDeNombres } from './datos/nombres.ts'
+import { PanelNacional } from './panel/PanelNacional.tsx'
 import { colorearPorPerfil } from './perfiles/capaDePerfil.ts'
 import { LeyendaDePerfil } from './perfiles/LeyendaDePerfil.tsx'
 import type { MunicipioTrazado } from './territorio/geometriaDelMapa.ts'
@@ -68,33 +69,36 @@ function Explorador({ datos }: { datos: DatosDelMapa }) {
   const nombreDeLaEleccion = nombreDeEleccion(datos.nacional, eleccion)
 
   return (
-    <>
-      <div className="controles">
-        <Selector leyenda="Capa" opciones={OPCIONES_DE_CAPA} valor={capa} alCambiar={setCapa} />
-        {capa === 'brecha' ? (
-          <Selector leyenda="Elección" opciones={opcionesDeEleccion(datos.nacional)} valor={eleccion} alCambiar={setEleccion} />
-        ) : (
-          <Selector leyenda="Sexo" opciones={OPCIONES_DE_SEXO} valor={sexo} alCambiar={setSexo} />
-        )}
+    <div className="explorador">
+      <div className="explorador__mapa">
+        <div className="controles">
+          <Selector leyenda="Capa" opciones={OPCIONES_DE_CAPA} valor={capa} alCambiar={setCapa} />
+          {capa === 'brecha' ? (
+            <Selector leyenda="Elección" opciones={opcionesDeEleccion(datos.nacional)} valor={eleccion} alCambiar={setEleccion} />
+          ) : (
+            <Selector leyenda="Sexo" opciones={OPCIONES_DE_SEXO} valor={sexo} alCambiar={setSexo} />
+          )}
+        </div>
+        <Ruta pasos={pasosDeLaRuta(nivelDeZoom, nombres.deEntidad, nombres.deMunicipio)} alElegir={setNivelDeZoom} />
+        <MapaMexico
+          topologia={datos.topologia}
+          colorear={colorear}
+          descripcion={
+            capa === 'brecha'
+              ? `Mapa de México por municipio: brecha de participación entre mujeres y hombres en la ${nombreDeLaEleccion}`
+              : `Mapa de México por municipio: perfil principal de ${sexoConArticulo(sexo)}`
+          }
+          nivelDeZoom={nivelDeZoom}
+          alCambiarNivel={setNivelDeZoom}
+        >
+          {capa === 'brecha' ? (
+            <LeyendaDeBrecha eleccion={nombreDeLaEleccion} />
+          ) : (
+            <LeyendaDePerfil perfiles={datos.perfiles} sexo={sexo} />
+          )}
+        </MapaMexico>
       </div>
-      <Ruta pasos={pasosDeLaRuta(nivelDeZoom, nombres.deEntidad, nombres.deMunicipio)} alElegir={setNivelDeZoom} />
-      <MapaMexico
-        topologia={datos.topologia}
-        colorear={colorear}
-        descripcion={
-          capa === 'brecha'
-            ? `Mapa de México por municipio: brecha de participación entre mujeres y hombres en la ${nombreDeLaEleccion}`
-            : `Mapa de México por municipio: perfil principal de ${sexoConArticulo(sexo)}`
-        }
-        nivelDeZoom={nivelDeZoom}
-        alCambiarNivel={setNivelDeZoom}
-      >
-        {capa === 'brecha' ? (
-          <LeyendaDeBrecha eleccion={nombreDeLaEleccion} />
-        ) : (
-          <LeyendaDePerfil perfiles={datos.perfiles} sexo={sexo} />
-        )}
-      </MapaMexico>
-    </>
+      <PanelNacional datos={datos} />
+    </div>
   )
 }

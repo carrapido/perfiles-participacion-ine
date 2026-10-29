@@ -1,0 +1,41 @@
+.figura {
+  margin: 0 0 28px;
+}
+
+.figura__titulo {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.figura__tabla {
+  font-size: 0.8125rem;
+}
+
+.figura__tabla summary {
+  cursor: pointer;
+}
+
+.figura__tabla table {
+  width: 100%;
+  margin-top: 6px;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.figura__tabla th,
+.figura__tabla td {
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--color-rejilla);
+  text-align: right;
+}
+
+.figura__tabla th[scope='row'],
+.figura__tabla th[scope='col']:first-child {
+  text-align: left;
+}
+
+.figura__fuente {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: var(--color-texto-secundario);
+}

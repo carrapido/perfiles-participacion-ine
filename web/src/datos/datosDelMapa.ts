@@ -29,19 +29,33 @@ export interface ResultadoNacional {
 
 export type Sexo = 'mujeres' | 'hombres'
 
-/** Solo los campos que usa el sitio hasta ahora; perfiles.json trae también trayectoria, etapas y estrategias. */
+/** Solo los campos que usa el sitio hasta ahora; perfiles.json trae también etapas, textos y estrategias. */
 export interface Perfil {
   id: string // como en celdas_k2_3.csv: mujeres_0, hombres_1…
   orden: number
   nombre: string
   sexo: Sexo
   color: string
+  trayectoria: { anio: number; participacion: number }[]
+  judicial_2025: number
+}
+
+/** Brecha por grupo de edad de un ámbito; la judicial es null en Campeche, que no tiene datos. */
+export interface CurvasDeBrecha {
+  federal_2024: (number | null)[]
+  judicial_2025: (number | null)[] | null
+}
+
+export interface BrechaPorEdad {
+  grupos_de_edad: string[]
+  ambitos: (CurvasDeBrecha & { clave: number; nombre: string })[] // clave 0: el total nacional
 }
 
 export interface DatosDelMapa {
   topologia: TopologiaDeMexico
   perfiles: Perfil[]
   nacional: ResultadoNacional[]
+  brechaPorEdad: BrechaPorEdad
   entidades: Entidad[]
   elecciones: number[]
   municipios: Municipio[]
@@ -57,14 +71,18 @@ export type CargaDelMapa = { estado: 'lista'; datos: DatosDelMapa } | { estado: 
 /** Lee los JSON de scripts/exportar_web.py y scripts/preparar_geometria.sh. Nunca rechaza: el error se muestra. */
 export async function cargarDatosDelMapa(): Promise<CargaDelMapa> {
   try {
-    const [topologia, perfiles, nacional, entidades, { elecciones, municipios }] = await Promise.all([
+    const [topologia, perfiles, nacional, brechaPorEdad, entidades, { elecciones, municipios }] = await Promise.all([
       leerJson<TopologiaDeMexico>('mexico.topo.json'),
       leerJson<Perfil[]>('perfiles.json'),
       leerJson<ResultadoNacional[]>('nacional.json'),
+      leerJson<BrechaPorEdad>('brecha_edad.json'),
       leerJson<Entidad[]>('entidades.json'),
       leerJson<Pick<DatosDelMapa, 'elecciones' | 'municipios'>>('municipios.json'),
     ])
-    return { estado: 'lista', datos: { topologia, perfiles, nacional, entidades, elecciones, municipios } }
+    return {
+      estado: 'lista',
+      datos: { topologia, perfiles, nacional, brechaPorEdad, entidades, elecciones, municipios },
+    }
   } catch (error) {
     return { estado: 'fallida', mensaje: error instanceof Error ? error.message : String(error) }
   }

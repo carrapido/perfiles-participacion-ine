@@ -1,6 +1,8 @@
 :root {
   --color-fondo: #ffffff;
   --color-texto: #1a1a1a;
+  --color-texto-secundario: #52514e;
+  --color-rejilla: #ecebe8;
 
   font-family: 'Inter Variable', system-ui, sans-serif;
   color: var(--color-texto);
@@ -12,9 +14,22 @@ body {
 }
 
 #root {
-  max-width: 1100px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 16px 32px;
+}
+
+.explorador {
+  display: grid;
+  gap: 24px;
+}
+
+/* minmax(0, …): sin él, el SVG del mapa empuja la columna y el panel se sale de la pantalla */
+@media (min-width: 960px) {
+  .explorador {
+    grid-template-columns: minmax(0, 3fr) minmax(320px, 2fr);
+    align-items: start;
+  }
 }
 
 .controles {
