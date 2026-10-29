@@ -14,8 +14,8 @@ from agregar_ccpc import GRUPOS as GRUPOS_DE_EDAD
 
 # Python busca los módulos en sys.path, que al correr un script solo incluye la carpeta del script (scripts/)
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from segmentacion import (ANIOS, CLAVES_DE_CELDA, ETAPAS, HOMBRES, MUJERES, SEXOS, VARIABLES, cargar_celdas,
-                          mayores_primero, tasa_de_participacion)
+from segmentacion import (ANIOS, CLAVES_DE_CELDA, ETAPAS, HOMBRES, LISTA_NOMINAL_MINIMA, MUJERES, SEXOS, VARIABLES,
+                          cargar_celdas, mayores_primero, tasa_de_participacion)
 
 AGREGADOS, RESULTADOS = "data/agregados", "data/resultados/por_sexo"
 DESTINO = Path("web/public/data")
@@ -180,11 +180,13 @@ def curvas_de_brecha(clave: int, nombre: str, brecha: pd.Series) -> dict:
 
 
 def municipios(celdas: pd.DataFrame) -> dict:
-    """Brecha por elección y perfil principal de cada municipio de la última federal."""
-    brecha = brecha_por_eleccion(cargar_conteos(POR_MUNICIPIO))
+    """Brecha por elección, perfil principal y, si le falta, por qué, de cada municipio de la última federal."""
+    conteos = cargar_conteos(POR_MUNICIPIO)
+    brecha = brecha_por_eleccion(conteos)
+    votos_contados = votos_contados_por_federal(conteos)
     reparto = reparto_por(celdas, MUNICIPIO)
     return {"elecciones": list(ARCHIVO_POR_ELECCION),
-            "municipios": [describir_municipio(clave, nombre, brecha, reparto)
+            "municipios": [describir_municipio(clave, nombre, brecha, votos_contados, reparto)
                            for clave, nombre in nombres_de_municipios().items()]}
 
 
@@ -192,6 +194,13 @@ def brecha_por_eleccion(conteos: pd.DataFrame) -> pd.DataFrame:
     """Una fila por municipio y una columna por elección. Queda NaN donde el municipio no existía o no tuvo votos."""
     brecha = participacion_por_sexo(conteos, [*MUNICIPIO, "AELEC"]).brecha
     return brecha.unstack("AELEC").reindex(columns=list(ARCHIVO_POR_ELECCION))
+
+
+def votos_contados_por_federal(conteos: pd.DataFrame) -> pd.DataFrame:
+    """SV + NV de cada municipio en cada federal del modelo. Queda NaN donde el municipio no aparece en los conteos."""
+    federales = conteos[conteos.AELEC.isin(ANIOS)]
+    contados = federales.assign(contados=federales.SV + federales.NV).groupby([*MUNICIPIO, "AELEC"]).contados.sum()
+    return contados.unstack("AELEC").reindex(columns=ANIOS)
 
 
 def nombres_de_municipios() -> pd.Series:
@@ -202,12 +211,35 @@ def nombres_de_municipios() -> pd.Series:
     return nombres
 
 
-def describir_municipio(clave: tuple[int, int], nombre: str, brecha: pd.DataFrame, reparto: pd.Series) -> dict:
+def describir_municipio(clave: tuple[int, int], nombre: str, brecha: pd.DataFrame, votos_contados: pd.DataFrame,
+                        reparto: pd.Series) -> dict:
     entidad, municipio = clave
     tiene_perfil = clave in reparto.index  # 222 municipios no tienen ninguna celda en el modelo
+    principal = perfil_principal(reparto.loc[clave]) if tiene_perfil else None
     return {"entidad": entidad, "municipio": municipio, "nombre": nombre,
             "brecha": [None if pd.isna(valor) else valor for valor in brecha.loc[clave]],
-            "perfil_principal": perfil_principal(reparto.loc[clave]) if tiene_perfil else None}
+            "perfil_principal": principal,
+            **sin_perfil(principal, votos_contados.loc[clave])}
+
+
+def sin_perfil(principal: dict[str, str | None] | None, votos_contados: pd.Series) -> dict:
+    """La causa de cada sexo sin perfil principal, en la clave sin_perfil. Solo la llevan los municipios a los que les
+    falta el perfil de algún sexo: así municipios.json no repite un campo vacío en los demás."""
+    sexos = [sexo for sexo in SEXOS.values() if principal is None or principal[sexo] is None]
+    return {"sin_perfil": dict.fromkeys(sexos, causa_sin_perfil(votos_contados))} if sexos else {}
+
+
+def causa_sin_perfil(votos_contados: pd.Series) -> dict:
+    """Por qué el modelo no tiene celdas de un sexo en el municipio, a partir de sus votos contados en cada federal.
+    Una celda entra al modelo si tiene participación en las seis federales y la lista nominal mínima en cada una; si el
+    municipio no aparece en los conteos de alguna, o no tiene votos contados en alguna, no entra ninguna de sus celdas."""
+    fuera = votos_contados.index[votos_contados.isna()].tolist()
+    if fuera:
+        return {"causa": "fuera_de_los_conteos", "elecciones": fuera}
+    sin_conteo = votos_contados.index[votos_contados == 0].tolist()
+    if sin_conteo:
+        return {"causa": "sin_conteo", "elecciones": sin_conteo}
+    return {"causa": "lista_nominal_chica", "minima": LISTA_NOMINAL_MINIMA}
 
 
 def escribir_json(ruta: Path, contenido: list | dict, sangria: int | None = 2) -> None:

@@ -2,17 +2,19 @@ import '../compartido/botones.css'
 import { COLOR_SIN_DATOS } from '../compartido/colores.ts'
 import '../compartido/leyenda.css'
 import { sexoConArticulo } from '../compartido/sexoConArticulo.ts'
-import { SEXOS, type Perfil, type PerfilPrincipal } from '../datos/datosDelMapa.ts'
+import { SEXOS, type CausaSinPerfil, type Municipio, type Perfil, type PerfilPrincipal, type Sexo } from '../datos/datosDelMapa.ts'
+import { porQueNoTienePerfil } from './causaSinPerfil.ts'
 import './LeyendaDePerfil.css'
 
 interface Props {
   perfiles: readonly Perfil[]
   principal: PerfilPrincipal | null // null: el modelo no tiene celdas en el municipio
+  sinPerfil: Municipio['sin_perfil']
   alAbrirFicha: (idDelPerfil: string) => void
 }
 
 /** El perfil de cada sexo con más lista nominal 2024 en el municipio: el mismo color que tiene en la capa de perfiles. */
-export function PerfilesPrincipales({ perfiles, principal, alAbrirFicha }: Props) {
+export function PerfilesPrincipales({ perfiles, principal, sinPerfil, alAbrirFicha }: Props) {
   return (
     <section className="perfiles-principales">
       <h3 className="perfiles-principales__titulo">Perfil principal</h3>
@@ -28,7 +30,7 @@ export function PerfilesPrincipales({ perfiles, principal, alAbrirFicha }: Props
                   {perfil.nombre}
                 </button>
               ) : (
-                `Sin perfil: el modelo no tiene celdas de ${sexoConArticulo(sexo)} en este municipio`
+                textoSinPerfil(sexo, sinPerfil?.[sexo])
               )}
             </li>
           )
@@ -36,4 +38,9 @@ export function PerfilesPrincipales({ perfiles, principal, alAbrirFicha }: Props
       </ul>
     </section>
   )
+}
+
+function textoSinPerfil(sexo: Sexo, causa: CausaSinPerfil | undefined): string {
+  const sinPerfil = `Sin perfil de ${sexoConArticulo(sexo)}`
+  return causa ? `${sinPerfil} porque ${porQueNoTienePerfil(causa)}` : sinPerfil
 }

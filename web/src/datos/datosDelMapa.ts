@@ -6,10 +6,16 @@ export interface Municipio {
   nombre: string
   brecha: readonly (number | null)[] // alineada con `elecciones`
   perfil_principal: PerfilPrincipal | null // null: el modelo no tiene celdas en el municipio
+  sin_perfil?: Partial<Record<Sexo, CausaSinPerfil>> // solo en los municipios sin perfil de algún sexo
 }
 
 /** Id del perfil con más lista nominal 2024 de cada sexo; null si el modelo no tiene celdas de ese sexo. */
 export type PerfilPrincipal = Record<Sexo, string | null>
+
+/** Por qué el modelo no tiene celdas de un sexo en el municipio; la calcula causa_sin_perfil en exportar_web.py. */
+export type CausaSinPerfil =
+  | { causa: 'lista_nominal_chica'; minima: number }
+  | { causa: 'sin_conteo' | 'fuera_de_los_conteos'; elecciones: readonly number[] }
 
 export type TopologiaDeMexico = Topology<{
   municipios: GeometryCollection<{ entidad: number; municipio: number }>

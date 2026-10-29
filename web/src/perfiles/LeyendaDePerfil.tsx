@@ -29,7 +29,7 @@ export function LeyendaDePerfil({ perfiles, sexo, alAbrirFicha }: Props) {
           ))}
         <li>
           <span className="leyenda__muestra" style={{ background: COLOR_SIN_DATOS }} />
-          Sin perfil: municipios sin celdas de {sexoConArticulo(sexo)} en el modelo
+          Sin perfil: municipios con poca lista nominal de {sexoConArticulo(sexo)} o sin datos de alguna elección
         </li>
       </ul>
     </div>

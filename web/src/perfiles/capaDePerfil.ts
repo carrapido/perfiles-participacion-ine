@@ -1,9 +1,10 @@
 import { COLOR_SIN_DATOS } from '../compartido/colores.ts'
-import { claveDeMunicipio, type Municipio, type Perfil, type Sexo } from '../datos/datosDelMapa.ts'
+import { claveDeMunicipio, type CausaSinPerfil, type Municipio, type Perfil, type Sexo } from '../datos/datosDelMapa.ts'
 import type { MunicipioColoreado, MunicipioTrazado } from '../territorio/geometriaDelMapa.ts'
+import { porQueNoTienePerfil } from './causaSinPerfil.ts'
 
 interface DatosDeLaCapa {
-  municipios: readonly Pick<Municipio, 'entidad' | 'municipio' | 'nombre' | 'perfil_principal'>[]
+  municipios: readonly Pick<Municipio, 'entidad' | 'municipio' | 'nombre' | 'perfil_principal' | 'sin_perfil'>[]
   perfiles: readonly Pick<Perfil, 'id' | 'nombre' | 'color'>[]
 }
 
@@ -18,7 +19,11 @@ export function colorearPorPerfil(trazos: MunicipioTrazado[], { municipios, perf
     return {
       ...trazo,
       color: perfil?.color ?? COLOR_SIN_DATOS,
-      descripcion: `${municipio?.nombre}: ${perfil?.nombre ?? 'sin perfil'}`,
+      descripcion: `${municipio?.nombre}: ${perfil?.nombre ?? sinPerfil(municipio?.sin_perfil?.[sexo])}`,
     }
   })
+}
+
+function sinPerfil(causa: CausaSinPerfil | undefined): string {
+  return causa ? `sin perfil porque ${porQueNoTienePerfil(causa)}` : 'sin perfil'
 }

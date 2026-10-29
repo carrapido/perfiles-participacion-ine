@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { claveDeMunicipio, type DatosDelMapa, type PerfilPrincipal } from '../datos/datosDelMapa.ts'
+import { claveDeMunicipio, type DatosDelMapa, type Municipio } from '../datos/datosDelMapa.ts'
 import type { BuscadorDeNombres } from '../datos/nombres.ts'
 import { PerfilesPrincipales } from '../perfiles/PerfilesPrincipales.tsx'
 import type { NivelDeZoom } from '../territorio/nivelDeZoom.ts'
@@ -17,12 +17,14 @@ interface Props {
 /** Contenedor: decide qué lleva el panel en cada nivel de zoom; PanelVista solo lo dibuja. */
 export function Panel({ datos, nivelDeZoom, nombres, alAbrirFicha }: Props) {
   const figuras = useMemo(() => figurasDel(nivelDeZoom, datos), [nivelDeZoom, datos])
+  const municipio = nivelDeZoom.nivel === 'municipio' ? municipioDel(nivelDeZoom, datos.municipios) : undefined
   return (
     <PanelVista titulo={tituloDel(nivelDeZoom, nombres)} figuras={figuras}>
-      {nivelDeZoom.nivel === 'municipio' && (
+      {municipio && (
         <PerfilesPrincipales
           perfiles={datos.perfiles}
-          principal={perfilPrincipalDel(nivelDeZoom, datos.municipios)}
+          principal={municipio.perfil_principal}
+          sinPerfil={municipio.sin_perfil}
           alAbrirFicha={alAbrirFicha}
         />
       )}
@@ -42,6 +44,6 @@ function tituloDel(nivelDeZoom: NivelDeZoom, { deEntidad, deMunicipio }: Buscado
   }
 }
 
-function perfilPrincipalDel(clave: { entidad: number; municipio: number }, municipios: DatosDelMapa['municipios']): PerfilPrincipal | null {
-  return municipios.find((municipio) => claveDeMunicipio(municipio) === claveDeMunicipio(clave))?.perfil_principal ?? null
+function municipioDel(clave: { entidad: number; municipio: number }, municipios: DatosDelMapa['municipios']): Municipio | undefined {
+  return municipios.find((municipio) => claveDeMunicipio(municipio) === claveDeMunicipio(clave))
 }
