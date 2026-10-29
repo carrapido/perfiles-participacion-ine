@@ -1,6 +1,8 @@
 import { interpolatePuOr, scaleDiverging } from 'd3'
+import { COLOR_SIN_DATOS } from '../compartido/colores.ts'
 
-export const COLOR_SIN_DATOS = '#b8b8b8'
+// Reexportado solo para colorDeBrecha.test.ts, que lo importa de aquí; quitar cuando se libere tests.lock
+export { COLOR_SIN_DATOS }
 
 // La misma escala para todas las elecciones: un tono significa la misma brecha en 2009, en 2024 o en la judicial
 export const BRECHA_MAXIMA = 20

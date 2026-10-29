@@ -16,3 +16,10 @@ body {
   margin: 0 auto;
   padding: 0 16px 32px;
 }
+
+.controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-bottom: 8px;
+}

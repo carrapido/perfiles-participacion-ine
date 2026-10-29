@@ -1,0 +1,13 @@
+.leyenda__perfiles {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.leyenda__perfiles li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

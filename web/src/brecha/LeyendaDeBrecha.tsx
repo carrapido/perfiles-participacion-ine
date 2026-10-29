@@ -1,4 +1,6 @@
-import { BRECHA_MAXIMA, COLOR_SIN_DATOS } from './colorDeBrecha.ts'
+import { COLOR_SIN_DATOS } from '../compartido/colores.ts'
+import '../compartido/leyenda.css'
+import { BRECHA_MAXIMA } from './colorDeBrecha.ts'
 import { degradadoDeBrecha } from './leyendaDeBrecha.ts'
 import './LeyendaDeBrecha.css'
 

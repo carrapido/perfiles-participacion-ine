@@ -8,7 +8,7 @@ interface Opcion<T> {
 
 interface Props<T extends string | number> {
   leyenda: string
-  opciones: Opcion<T>[]
+  opciones: readonly Opcion<T>[]
   valor: T
   alCambiar: (valor: T) => void
 }

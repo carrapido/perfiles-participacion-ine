@@ -1,0 +1,16 @@
+.leyenda {
+  max-width: 420px;
+  margin-top: 8px;
+  font-size: 0.8125rem;
+}
+
+.leyenda__titulo {
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.leyenda__muestra {
+  flex: none;
+  width: 12px;
+  height: 12px;
+}

@@ -1,12 +1,12 @@
 import type { ReactNode, RefObject } from 'react'
-import type { MunicipioColoreado } from '../brecha/capaDeBrecha.ts'
-import { LIENZO } from './geometriaDelMapa.ts'
+import { LIENZO, type MunicipioColoreado } from './geometriaDelMapa.ts'
 import type { Resaltes } from './resaltes.ts'
 import './MapaMexico.css'
 
 interface Props {
   lienzoRef: RefObject<SVGSVGElement | null>
   capaRef: RefObject<SVGGElement | null>
+  descripcion: string
   municipios: MunicipioColoreado[]
   bordesDeEntidad: string
   resaltes: Resaltes
@@ -18,6 +18,7 @@ interface Props {
 export function MapaMexicoVista({
   lienzoRef,
   capaRef,
+  descripcion,
   municipios,
   bordesDeEntidad,
   resaltes,
@@ -31,7 +32,7 @@ export function MapaMexicoVista({
         ref={lienzoRef}
         className="mapa__lienzo"
         viewBox={`0 0 ${LIENZO.ancho} ${LIENZO.alto}`}
-        aria-label="Mapa de México por municipio, coloreado por la brecha de participación entre mujeres y hombres"
+        aria-label={descripcion}
       >
         <rect className="mapa__fondo" width={LIENZO.ancho} height={LIENZO.alto} onClick={alHacerClicEnFondo} />
         <g ref={capaRef}>

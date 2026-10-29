@@ -12,6 +12,12 @@ export interface MunicipioTrazado {
   trazo: string // atributo `d` del <path>
 }
 
+/** Lo que el mapa dibuja de cada municipio; cada capa decide su color y su descripción. */
+export interface MunicipioColoreado extends MunicipioTrazado {
+  color: string
+  descripcion: string
+}
+
 export interface GeometriaDelMapa {
   municipios: MunicipioTrazado[]
   bordesDeEntidad: string
