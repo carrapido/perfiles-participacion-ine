@@ -1,6 +1,7 @@
 import type { ReactNode, RefObject } from 'react'
 import type { MunicipioColoreado } from '../brecha/capaDeBrecha.ts'
 import { LIENZO } from './geometriaDelMapa.ts'
+import type { Resaltes } from './resaltes.ts'
 import './MapaMexico.css'
 
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
   capaRef: RefObject<SVGGElement | null>
   municipios: MunicipioColoreado[]
   bordesDeEntidad: string
+  resaltes: Resaltes
   alHacerClicEnFondo: () => void
   alHacerClicEnMunicipio: (entidad: number, municipio: number) => void
   children?: ReactNode
@@ -18,6 +20,7 @@ export function MapaMexicoVista({
   capaRef,
   municipios,
   bordesDeEntidad,
+  resaltes,
   alHacerClicEnFondo,
   alHacerClicEnMunicipio,
   children,
@@ -44,6 +47,13 @@ export function MapaMexicoVista({
             </path>
           ))}
           <path className="mapa__bordes" d={bordesDeEntidad} />
+          {resaltes.entidad && <path className="mapa__entidad-enfocada" d={resaltes.entidad} />}
+          {resaltes.municipio && (
+            <>
+              <path className="mapa__halo" d={resaltes.municipio} />
+              <path className="mapa__municipio-elegido" d={resaltes.municipio} />
+            </>
+          )}
         </g>
       </svg>
       {children}

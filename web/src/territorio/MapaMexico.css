@@ -35,6 +35,30 @@
   pointer-events: none;
 }
 
+.mapa__entidad-enfocada,
+.mapa__halo,
+.mapa__municipio-elegido {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.mapa__entidad-enfocada {
+  stroke: var(--color-texto);
+  stroke-width: 2.5;
+}
+
+/* El halo claro deja ver el contorno oscuro aun sobre los morados más intensos */
+.mapa__halo {
+  stroke: var(--color-fondo);
+  stroke-width: 5;
+}
+
+.mapa__municipio-elegido {
+  stroke: var(--color-texto);
+  stroke-width: 2;
+}
+
 .mapa__fuente {
   margin-top: 12px;
   font-size: 0.8125rem;

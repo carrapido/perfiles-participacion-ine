@@ -15,6 +15,7 @@ export interface MunicipioTrazado {
 export interface GeometriaDelMapa {
   municipios: MunicipioTrazado[]
   bordesDeEntidad: string
+  trazoDeEntidad: Map<number, string>
   cajaDeEntidad: Map<number, Caja>
 }
 
@@ -28,6 +29,7 @@ export function prepararGeometria(topologia: TopologiaDeMexico): GeometriaDelMap
       trazo: trazar(municipio) ?? '',
     })),
     bordesDeEntidad: trazar(mesh(topologia, topologia.objects.entidades)) ?? '',
+    trazoDeEntidad: new Map(entidades.features.map((entidad) => [entidad.properties.entidad, trazar(entidad) ?? ''])),
     cajaDeEntidad: new Map(entidades.features.map((entidad) => [entidad.properties.entidad, trazar.bounds(entidad)])),
   }
 }

@@ -6,6 +6,7 @@ import { encuadrar, type Caja } from './encuadre.ts'
 import { LIENZO, prepararGeometria } from './geometriaDelMapa.ts'
 import { MapaMexicoVista } from './MapaMexicoVista.tsx'
 import { NACIONAL, alHacerClicEnMunicipio, entidadEnfocada, type NivelDeZoom } from './nivelDeZoom.ts'
+import { resaltesDe } from './resaltes.ts'
 
 // Sin tope, la Ciudad de México quedaría con un zoom de más de 50×
 const ESCALA_MAXIMA = 40
@@ -27,6 +28,7 @@ export function MapaMexico({ datos, eleccion, nivelDeZoom, alCambiarNivel, child
   const capaRef = useRef<SVGGElement>(null)
   const geometria = useMemo(() => prepararGeometria(datos.topologia), [datos.topologia])
   const municipios = useMemo(() => colorearPorBrecha(geometria.municipios, datos, eleccion), [geometria, datos, eleccion])
+  const resaltes = useMemo(() => resaltesDe(nivelDeZoom, geometria), [nivelDeZoom, geometria])
   const zoom = useZoom(lienzoRef, capaRef)
   useEncuadre(lienzoRef, zoom, geometria.cajaDeEntidad, entidadEnfocada(nivelDeZoom))
   useTecla('Escape', () => alCambiarNivel(NACIONAL))
@@ -37,6 +39,7 @@ export function MapaMexico({ datos, eleccion, nivelDeZoom, alCambiarNivel, child
       capaRef={capaRef}
       municipios={municipios}
       bordesDeEntidad={geometria.bordesDeEntidad}
+      resaltes={resaltes}
       alHacerClicEnFondo={() => alCambiarNivel(NACIONAL)}
       alHacerClicEnMunicipio={(entidad, municipio) => alCambiarNivel(alHacerClicEnMunicipio(nivelDeZoom, entidad, municipio))}
     >
