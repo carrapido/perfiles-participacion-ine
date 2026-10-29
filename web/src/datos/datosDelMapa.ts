@@ -18,8 +18,18 @@ export interface Entidad {
   nombre: string
 }
 
+/** Participación nacional por sexo en una elección, en porcentaje; la brecha es mujeres − hombres. */
+export interface ResultadoNacional {
+  anio: number
+  tipo: 'federal' | 'judicial'
+  mujeres: number
+  hombres: number
+  brecha: number
+}
+
 export interface DatosDelMapa {
   topologia: TopologiaDeMexico
+  nacional: ResultadoNacional[]
   entidades: Entidad[]
   elecciones: number[]
   municipios: Municipio[]
@@ -35,12 +45,13 @@ export type CargaDelMapa = { estado: 'lista'; datos: DatosDelMapa } | { estado: 
 /** Lee los JSON de scripts/exportar_web.py y scripts/preparar_geometria.sh. Nunca rechaza: el error se muestra. */
 export async function cargarDatosDelMapa(): Promise<CargaDelMapa> {
   try {
-    const [topologia, entidades, { elecciones, municipios }] = await Promise.all([
+    const [topologia, nacional, entidades, { elecciones, municipios }] = await Promise.all([
       leerJson<TopologiaDeMexico>('mexico.topo.json'),
+      leerJson<ResultadoNacional[]>('nacional.json'),
       leerJson<Entidad[]>('entidades.json'),
       leerJson<Pick<DatosDelMapa, 'elecciones' | 'municipios'>>('municipios.json'),
     ])
-    return { estado: 'lista', datos: { topologia, entidades, elecciones, municipios } }
+    return { estado: 'lista', datos: { topologia, nacional, entidades, elecciones, municipios } }
   } catch (error) {
     return { estado: 'fallida', mensaje: error instanceof Error ? error.message : String(error) }
   }

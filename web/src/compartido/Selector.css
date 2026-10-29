@@ -1,0 +1,46 @@
+.selector {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.selector__leyenda {
+  margin-bottom: 4px;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.selector__opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* El radio queda invisible pero enfocable; la etiqueta hace de botón */
+.selector__opcion input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.selector__opcion span {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid var(--color-texto);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+
+.selector__opcion input:checked + span {
+  background: var(--color-texto);
+  color: var(--color-fondo);
+}
+
+.selector__opcion input:focus-visible + span {
+  outline: 2px solid var(--color-texto);
+  outline-offset: 2px;
+}
