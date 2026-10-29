@@ -6,6 +6,8 @@ Agrupa a la ciudadanía en cinco perfiles de participación electoral con los Co
 
 **Sitio:** https://carrapido.github.io/perfiles-participacion-ine/
 
+**Notebook:** [abrir en Google Colab](https://colab.research.google.com/github/carrapido/perfiles-participacion-ine/blob/main/notebooks/perfiles_participacion.ipynb). Con *Entorno de ejecución → Ejecutar todo* reproduce el análisis completo y comprueba sus cifras; no hay que preparar nada.
+
 ## Metodología en breve
 
 - **Unidad de análisis:** la celda municipio × sexo × etapa de vida (18-24, 25-34, 35-44, 45-59, 60-69 y 70 o más).
@@ -31,6 +33,7 @@ El detalle de los datos, el método, los resultados y sus limitaciones está en 
 | `data/agregados/` | CCPC agregados de cada elección y su control de calidad. |
 | `data/resultados/por_sexo/` | Asignación de celdas, resumen de los perfiles, métricas por k y los textos de los perfiles (`textos_perfiles.json`, escritos por el equipo). |
 | `web/` | Sitio web: Vite, React y TypeScript, con D3 para el mapa y ECharts para las gráficas. |
+| `notebooks/perfiles_participacion.ipynb` | Notebook de Colab: reproduce el análisis importando `src/` y `scripts/`, y comprueba sus cifras. |
 | `entregables/fichas/` | Las cinco fichas de perfil en PNG y el PDF que las reúne. |
 | `tests/` | Pruebas de Python (pytest). Las del sitio están junto a su código, en `web/src/**/*.test.ts` (Vitest). |
 
