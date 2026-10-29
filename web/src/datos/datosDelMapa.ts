@@ -37,15 +37,25 @@ export type Sexo = 'mujeres' | 'hombres'
 
 export const SEXOS: readonly Sexo[] = ['mujeres', 'hombres'] // el orden en que el sitio los muestra
 
-/** Solo los campos que usa el sitio hasta ahora; perfiles.json trae también etapas, textos y estrategias. */
+/** Solo los campos que usa el sitio; perfiles.json trae también las etapas de edad y las variables del modelo. */
 export interface Perfil {
   id: string // como en celdas_k2_3.csv: mujeres_0, hombres_1…
   orden: number
   nombre: string
   sexo: Sexo
   color: string
+  pct_lista_nominal: number // % de toda la lista nominal 2024
+  pct_de_su_sexo: number // % de la lista nominal 2024 de su sexo
   trayectoria: readonly { anio: number; participacion: number }[]
   judicial_2025: number
+  entidades_principales: readonly { clave: number; nombre: string; pct: number }[] // pct: % de su sexo en la entidad
+  resumen: string
+  quienes: string
+  como_votan: string
+  donde: string
+  lectura: string // interpretación: el sitio la presenta como hipótesis
+  objetivo: string
+  estrategias: readonly { estrategia: string; canal: string; indicador: string }[]
 }
 
 /** Brecha por grupo de edad de un ámbito; la judicial es null en Campeche, que no tiene datos. */

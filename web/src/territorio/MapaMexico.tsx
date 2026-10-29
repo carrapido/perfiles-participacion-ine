@@ -90,7 +90,8 @@ function transformacionPara(entidad: number | null, cajaDeEntidad: Map<number, C
 
 function useTecla(tecla: string, alPresionar: () => void) {
   const alPresionarTecla = useEffectEvent((evento: KeyboardEvent) => {
-    if (evento.key === tecla) alPresionar()
+    const vieneDeUnDialogo = evento.target instanceof Element && evento.target.closest('dialog') !== null
+    if (evento.key === tecla && !vieneDeUnDialogo) alPresionar() // el Esc de una ficha abierta solo cierra la ficha
   })
   useEffect(() => {
     const escuchar = (evento: KeyboardEvent) => alPresionarTecla(evento)

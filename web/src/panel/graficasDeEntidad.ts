@@ -1,10 +1,10 @@
 import type { BarSeriesOption } from 'echarts/charts'
+import { ARRIBA_DE_CINCO_PERFILES, baseDeGrafica } from '../compartido/baseDeGrafica.ts'
 import { colorDeTextoSobre } from '../compartido/contraste.ts'
 import type { OpcionDeGrafica } from '../compartido/echarts.ts'
-import type { Tabla } from '../compartido/FiguraDeDatos.tsx'
+import type { Tabla } from '../compartido/TablaDeDatos.tsx'
 import { formatearPorcentaje } from '../compartido/formato.ts'
 import { SEXOS, type Entidad, type Perfil } from '../datos/datosDelMapa.ts'
-import { baseDeGrafica } from './baseDeGrafica.ts'
 
 type PerfilDelReparto = Pick<Perfil, 'id' | 'nombre' | 'sexo' | 'color'>
 type RepartoDeEntidad = Pick<Entidad, 'reparto' | 'perfil_principal'>
@@ -16,7 +16,7 @@ const NOMBRES_DE_SEXO = ['Mujeres', 'Hombres']
 export function opcionDeRepartoDePerfiles(perfiles: readonly PerfilDelReparto[], entidad: RepartoDeEntidad): OpcionDeGrafica {
   return {
     ...baseDeGrafica((valor) => formatearPorcentaje(valor), { trigger: 'item' }),
-    grid: { top: 96, right: 16, bottom: 24, left: 64 },
+    grid: { top: ARRIBA_DE_CINCO_PERFILES, right: 16, bottom: 24, left: 64 },
     xAxis: { type: 'value', max: 100, axisLabel: { formatter: '{value}%' } },
     yAxis: { type: 'category', data: NOMBRES_DE_SEXO, inverse: true },
     series: perfiles.map((perfil) => segmento(perfil, entidad)),

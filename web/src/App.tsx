@@ -8,6 +8,7 @@ import { nombreDeEleccion, opcionesDeEleccion } from './datos/elecciones.ts'
 import { buscadorDeNombres } from './datos/nombres.ts'
 import { Panel } from './panel/Panel.tsx'
 import { colorearPorPerfil } from './perfiles/capaDePerfil.ts'
+import { FichaDePerfil } from './perfiles/FichaDePerfil.tsx'
 import { LeyendaDePerfil } from './perfiles/LeyendaDePerfil.tsx'
 import type { MunicipioTrazado } from './territorio/geometriaDelMapa.ts'
 import { MapaMexico } from './territorio/MapaMexico.tsx'
@@ -60,6 +61,7 @@ function Explorador({ datos }: { datos: DatosDelMapa }) {
   const [capa, setCapa] = useState<Capa>('brecha')
   const [eleccion, setEleccion] = useState(ELECCION_INICIAL)
   const [sexo, setSexo] = useState<Sexo>('mujeres')
+  const [fichaAbierta, setFichaAbierta] = useState<string | null>(null) // id del perfil
   const nombres = useMemo(() => buscadorDeNombres(datos), [datos])
   const colorear = useCallback(
     (trazos: MunicipioTrazado[]) =>
@@ -67,6 +69,7 @@ function Explorador({ datos }: { datos: DatosDelMapa }) {
     [capa, datos, eleccion, sexo],
   )
   const nombreDeLaEleccion = nombreDeEleccion(datos.nacional, eleccion)
+  const perfilDeLaFicha = datos.perfiles.find((perfil) => perfil.id === fichaAbierta)
 
   return (
     <div className="explorador">
@@ -94,11 +97,14 @@ function Explorador({ datos }: { datos: DatosDelMapa }) {
           {capa === 'brecha' ? (
             <LeyendaDeBrecha eleccion={nombreDeLaEleccion} />
           ) : (
-            <LeyendaDePerfil perfiles={datos.perfiles} sexo={sexo} />
+            <LeyendaDePerfil perfiles={datos.perfiles} sexo={sexo} alAbrirFicha={setFichaAbierta} />
           )}
         </MapaMexico>
       </div>
-      <Panel datos={datos} nivelDeZoom={nivelDeZoom} nombres={nombres} />
+      <Panel datos={datos} nivelDeZoom={nivelDeZoom} nombres={nombres} alAbrirFicha={setFichaAbierta} />
+      {perfilDeLaFicha && (
+        <FichaDePerfil perfil={perfilDeLaFicha} nacional={datos.nacional} alCerrar={() => setFichaAbierta(null)} />
+      )}
     </div>
   )
 }

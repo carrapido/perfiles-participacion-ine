@@ -1,9 +1,9 @@
 import type { BarSeriesOption } from 'echarts/charts'
+import { baseDeGrafica } from '../compartido/baseDeGrafica.ts'
 import { COLOR_CONTEXTO, COLOR_MUNICIPIO } from '../compartido/colores.ts'
 import type { OpcionDeGrafica } from '../compartido/echarts.ts'
-import type { Tabla } from '../compartido/FiguraDeDatos.tsx'
+import type { Tabla } from '../compartido/TablaDeDatos.tsx'
 import { formatearBrecha } from '../compartido/formato.ts'
-import { baseDeGrafica } from './baseDeGrafica.ts'
 
 /** Brechas alineadas con las elecciones; null donde no hubo votos o la entidad no tuvo judicial. */
 export interface BrechasPorEleccion {

@@ -1,3 +1,4 @@
+import '../compartido/botones.css'
 import { COLOR_SIN_DATOS } from '../compartido/colores.ts'
 import '../compartido/leyenda.css'
 import { sexoConArticulo } from '../compartido/sexoConArticulo.ts'
@@ -7,19 +8,23 @@ import './LeyendaDePerfil.css'
 interface Props {
   perfiles: readonly Perfil[]
   sexo: Sexo
+  alAbrirFicha: (idDelPerfil: string) => void
 }
 
-export function LeyendaDePerfil({ perfiles, sexo }: Props) {
+export function LeyendaDePerfil({ perfiles, sexo, alAbrirFicha }: Props) {
   return (
     <div className="leyenda">
       <p className="leyenda__titulo">Perfil de {sexoConArticulo(sexo)} con más lista nominal 2024 en cada municipio</p>
+      <p className="leyenda__ayuda">Elige un perfil para ver su ficha.</p>
       <ul className="leyenda__perfiles">
         {perfiles
           .filter((perfil) => perfil.sexo === sexo)
           .map((perfil) => (
             <li key={perfil.id}>
               <span className="leyenda__muestra" style={{ background: perfil.color }} />
-              {perfil.nombre}
+              <button type="button" className="boton-enlace" onClick={() => alAbrirFicha(perfil.id)}>
+                {perfil.nombre}
+              </button>
             </li>
           ))}
         <li>

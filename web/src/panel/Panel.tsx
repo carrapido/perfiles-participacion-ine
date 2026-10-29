@@ -11,15 +11,20 @@ interface Props {
   datos: DatosDelMapa
   nivelDeZoom: NivelDeZoom
   nombres: BuscadorDeNombres
+  alAbrirFicha: (idDelPerfil: string) => void
 }
 
 /** Contenedor: decide qué lleva el panel en cada nivel de zoom; PanelVista solo lo dibuja. */
-export function Panel({ datos, nivelDeZoom, nombres }: Props) {
+export function Panel({ datos, nivelDeZoom, nombres, alAbrirFicha }: Props) {
   const figuras = useMemo(() => figurasDel(nivelDeZoom, datos), [nivelDeZoom, datos])
   return (
     <PanelVista titulo={tituloDel(nivelDeZoom, nombres)} figuras={figuras}>
       {nivelDeZoom.nivel === 'municipio' && (
-        <PerfilesPrincipales perfiles={datos.perfiles} principal={perfilPrincipalDel(nivelDeZoom, datos.municipios)} />
+        <PerfilesPrincipales
+          perfiles={datos.perfiles}
+          principal={perfilPrincipalDel(nivelDeZoom, datos.municipios)}
+          alAbrirFicha={alAbrirFicha}
+        />
       )}
     </PanelVista>
   )

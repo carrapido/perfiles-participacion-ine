@@ -1,6 +1,6 @@
 import type { OpcionDeGrafica } from '../compartido/echarts.ts'
-import type { Tabla } from '../compartido/FiguraDeDatos.tsx'
-import { claveDeMunicipio, type BrechaPorEdad, type DatosDelMapa, type ResultadoPorSexo } from '../datos/datosDelMapa.ts'
+import type { Tabla } from '../compartido/TablaDeDatos.tsx'
+import { claveDeMunicipio, type BrechaPorEdad, type DatosDelMapa, type Perfil, type ResultadoPorSexo } from '../datos/datosDelMapa.ts'
 import { opcionesDeEleccion } from '../datos/elecciones.ts'
 import type { NivelDeZoom } from '../territorio/nivelDeZoom.ts'
 import { opcionDeRepartoDePerfiles, tablaDeRepartoDePerfiles } from './graficasDeEntidad.ts'
@@ -20,7 +20,10 @@ export interface Figura {
   tabla: Tabla
 }
 
-type DatosDelPanel = Omit<DatosDelMapa, 'topologia'>
+// Del perfil, el panel solo usa lo que dibujan el reparto y la validación judicial
+type DatosDelPanel = Omit<DatosDelMapa, 'topologia' | 'perfiles'> & {
+  perfiles: readonly Pick<Perfil, 'id' | 'nombre' | 'sexo' | 'color' | 'trayectoria' | 'judicial_2025'>[]
+}
 
 const CLAVE_NACIONAL = 0 // en brecha_edad.json, el ámbito 0 es el total nacional
 

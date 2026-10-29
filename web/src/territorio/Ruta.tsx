@@ -1,5 +1,6 @@
 import { NACIONAL, type NivelDeZoom } from './nivelDeZoom.ts'
 import type { PasoDeLaRuta } from './ruta.ts'
+import '../compartido/botones.css'
 import './Ruta.css'
 
 interface Props {
@@ -19,7 +20,7 @@ export function Ruta({ pasos, alElegir }: Props) {
               {posicion === ultimo ? (
                 <span aria-current="location">{paso.etiqueta}</span>
               ) : (
-                <button type="button" className="ruta__enlace" onClick={() => alElegir(paso.destino)}>
+                <button type="button" className="boton-enlace" onClick={() => alElegir(paso.destino)}>
                   {paso.etiqueta}
                 </button>
               )}
@@ -28,7 +29,7 @@ export function Ruta({ pasos, alElegir }: Props) {
         </ol>
       </nav>
       {ultimo > 0 && (
-        <button type="button" className="ruta__volver" onClick={() => alElegir(NACIONAL)}>
+        <button type="button" className="boton" onClick={() => alElegir(NACIONAL)}>
           Volver a México
         </button>
       )}

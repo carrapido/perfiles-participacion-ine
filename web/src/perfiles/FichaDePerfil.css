@@ -1,0 +1,123 @@
+/* Sin marcos ni franjas de color: el color del perfil solo va en su muestra y en su línea (CLAUDE.md, diseño) */
+.ficha {
+  box-sizing: border-box;
+  width: min(760px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.ficha::backdrop {
+  background: rgb(26 26 26 / 50%);
+}
+
+.ficha h3 {
+  margin: 20px 0 4px;
+  font-size: 1rem;
+}
+
+.ficha p {
+  margin: 0 0 8px;
+}
+
+/* El margen va en el contenido y no en el diálogo, para que también salga en el PNG */
+.ficha__contenido {
+  padding: 24px;
+}
+
+/* wrap-reverse: si los botones no caben junto al nombre (celular), suben a su propio renglón, arriba del nombre */
+.ficha__encabezado {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px 16px;
+}
+
+.ficha__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* flex-start: con el nombre en varios renglones (celular), la muestra se queda junto al primero */
+.ficha__nombre {
+  flex: 1 1 260px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+  font-size: 1.375rem;
+  line-height: 1.25;
+}
+
+.ficha__muestra {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 0.2em;
+}
+
+.ficha__peso,
+.ficha__nota,
+.ficha__fuente {
+  color: var(--color-texto-secundario);
+}
+
+.ficha__resumen {
+  font-size: 1.0625rem;
+}
+
+.ficha__nota,
+.ficha__fuente {
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 720px) {
+  .ficha__columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+.ficha__entidades {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.ficha__entidades li {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+  border-bottom: 1px solid var(--color-rejilla);
+}
+
+.ficha__estrategias {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ficha__estrategias li {
+  margin-bottom: 12px;
+}
+
+.ficha__estrategias li p {
+  margin: 2px 0 0;
+  color: var(--color-texto-secundario);
+  font-size: 0.875rem;
+}
+
+/* .ficha p le quitaría el margen de arriba: este selector tiene que ser igual de específico */
+.ficha .ficha__fuente {
+  margin-top: 24px;
+}

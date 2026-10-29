@@ -1,18 +1,12 @@
-import type { LineSeriesOption } from 'echarts/charts'
+import { ARRIBA_DE_CINCO_PERFILES, baseDeGrafica, dosLineasConNombre, linea } from '../compartido/baseDeGrafica.ts'
 import { COLOR_CONTEXTO, COLOR_HOMBRES, COLOR_JUDICIAL, COLOR_MUJERES } from '../compartido/colores.ts'
 import type { OpcionDeGrafica } from '../compartido/echarts.ts'
-import type { Tabla } from '../compartido/FiguraDeDatos.tsx'
+import type { Tabla } from '../compartido/TablaDeDatos.tsx'
 import { formatearBrecha, formatearPorcentaje } from '../compartido/formato.ts'
 import type { CurvasDeBrecha, Perfil, ResultadoPorSexo } from '../datos/datosDelMapa.ts'
-import { baseDeGrafica } from './baseDeGrafica.ts'
+import { ELECCIONES_COMPARADAS, participacionFederal } from '../perfiles/validacionJudicial.ts'
 
 type PerfilParaValidar = Pick<Perfil, 'nombre' | 'color' | 'trayectoria' | 'judicial_2025'>
-
-const ULTIMA_FEDERAL = 2024
-const ELECCIONES_COMPARADAS = ['Federal 2024', 'Judicial 2025']
-
-// Con dos series, cada línea lleva su nombre al final además de la leyenda (skill dataviz: identidad nunca solo por color)
-const NOMBRE_AL_FINAL: LineSeriesOption['endLabel'] = { show: true, formatter: '{a}' }
 
 export function opcionDeParticipacionPorSexo(nacional: readonly ResultadoPorSexo[]): OpcionDeGrafica {
   const federales = soloFederales(nacional)
@@ -21,10 +15,10 @@ export function opcionDeParticipacionPorSexo(nacional: readonly ResultadoPorSexo
     grid: { top: 32, right: 72, bottom: 24, left: 44 },
     xAxis: { type: 'category', data: federales.map(({ anio }) => String(anio)), boundaryGap: false },
     yAxis: { type: 'value', axisLabel: { formatter: '{value}%' } },
-    series: [
-      { ...linea('Mujeres', federales.map(({ mujeres }) => mujeres), COLOR_MUJERES), endLabel: NOMBRE_AL_FINAL },
-      { ...linea('Hombres', federales.map(({ hombres }) => hombres), COLOR_HOMBRES), endLabel: NOMBRE_AL_FINAL },
-    ],
+    series: dosLineasConNombre(
+      { nombre: 'Mujeres', datos: federales.map(({ mujeres }) => mujeres), color: COLOR_MUJERES },
+      { nombre: 'Hombres', datos: federales.map(({ hombres }) => hombres), color: COLOR_HOMBRES },
+    ),
   }
 }
 
@@ -47,10 +41,10 @@ export function opcionDeBrechaPorEdad(grupos: readonly string[], curvas: CurvasD
     // onZero false: con brechas negativas, las etiquetas de edad se quedan abajo y no cruzan las líneas
     xAxis: { type: 'category', data: [...grupos], boundaryGap: false, axisLine: { onZero: false } },
     yAxis: { type: 'value' },
-    series: [
-      { ...linea('Federal 2024', curvas.federal_2024, COLOR_CONTEXTO), endLabel: NOMBRE_AL_FINAL },
-      { ...linea('Judicial 2025', curvas.judicial_2025 ?? [], COLOR_JUDICIAL), endLabel: NOMBRE_AL_FINAL },
-    ],
+    series: dosLineasConNombre(
+      { nombre: 'Federal 2024', datos: curvas.federal_2024, color: COLOR_CONTEXTO },
+      { nombre: 'Judicial 2025', datos: curvas.judicial_2025 ?? [], color: COLOR_JUDICIAL },
+    ),
   }
 }
 
@@ -69,8 +63,8 @@ export function tablaDeBrechaPorEdad(grupos: readonly string[], curvas: CurvasDe
 export function opcionDeValidacionJudicial(perfiles: readonly PerfilParaValidar[]): OpcionDeGrafica {
   return {
     ...baseDeGrafica((valor) => formatearPorcentaje(valor)),
-    grid: { top: 96, right: 16, bottom: 24, left: 44 },
-    xAxis: { type: 'category', data: ELECCIONES_COMPARADAS },
+    grid: { top: ARRIBA_DE_CINCO_PERFILES, right: 16, bottom: 24, left: 44 },
+    xAxis: { type: 'category', data: [...ELECCIONES_COMPARADAS] },
     yAxis: { type: 'value', axisLabel: { formatter: '{value}%' } },
     series: perfiles.map((perfil) => linea(perfil.nombre, [participacionFederal(perfil), perfil.judicial_2025], perfil.color)),
   }
@@ -89,12 +83,4 @@ export function tablaDeValidacionJudicial(perfiles: readonly PerfilParaValidar[]
 
 function soloFederales(nacional: readonly ResultadoPorSexo[]): ResultadoPorSexo[] {
   return nacional.filter((eleccion) => eleccion.tipo === 'federal')
-}
-
-function participacionFederal({ trayectoria }: PerfilParaValidar): number | null {
-  return trayectoria.find((punto) => punto.anio === ULTIMA_FEDERAL)?.participacion ?? null
-}
-
-function linea(name: string, data: readonly (number | null)[], color: string): LineSeriesOption {
-  return { type: 'line', name, data: [...data], color }
 }

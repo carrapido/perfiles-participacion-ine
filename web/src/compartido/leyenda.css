@@ -9,6 +9,11 @@
   font-weight: 600;
 }
 
+.leyenda__ayuda {
+  margin: 0 0 6px;
+  color: var(--color-texto-secundario);
+}
+
 .leyenda__muestra {
   flex: none;
   width: 12px;

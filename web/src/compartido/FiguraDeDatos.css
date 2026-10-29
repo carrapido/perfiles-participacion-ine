@@ -15,23 +15,8 @@
   cursor: pointer;
 }
 
-.figura__tabla table {
-  width: 100%;
+.figura__tabla .tabla {
   margin-top: 6px;
-  border-collapse: collapse;
-  font-variant-numeric: tabular-nums;
-}
-
-.figura__tabla th,
-.figura__tabla td {
-  padding: 4px 6px;
-  border-bottom: 1px solid var(--color-rejilla);
-  text-align: right;
-}
-
-.figura__tabla th[scope='row'],
-.figura__tabla th[scope='col']:first-child {
-  text-align: left;
 }
 
 .figura__fuente {
