@@ -1,0 +1,61 @@
+# Publica el sitio de web/ en GitHub Pages: https://carrapido.github.io/perfiles-participacion-ine/
+# Basado en la plantilla de Vite: https://vite.dev/guide/static-deploy.html#github-pages
+# Requiere Settings → Pages → Build and deployment → Source: GitHub Actions
+name: Publicar el sitio en GitHub Pages
+
+on:
+  push:
+    branches: ['main']
+  # Permite correrlo a mano desde la pestaña Actions
+  workflow_dispatch:
+
+# Lo mínimo para publicar en Pages: leer el repositorio y escribir en Pages con un token OIDC
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Una sola publicación a la vez; si llega otro push, la anterior se cancela
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: web
+
+jobs:
+  publicar:
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacion.outputs.page_url }}
+    runs-on: ubuntu-latest
+    # Cada action va fijada al SHA de su versión, como en la plantilla de Vite: una etiqueta se puede mover, un SHA no
+    # https://docs.github.com/en/actions/reference/security/secure-use#using-third-party-actions
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Instalar Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24 # la versión con la que se probó el sitio
+          cache: 'npm'
+          cache-dependency-path: web/package-lock.json
+      # --ignore-scripts: los únicos scripts de instalación son de dependencias de mapshaper y de fsevents, que el build
+      # no usa; así no se compila código nativo en cada publicación
+      - name: Instalar dependencias
+        run: npm ci --ignore-scripts
+      # Si una prueba falla, el sitio no se publica
+      - name: Probar
+        run: npx vitest run
+      - name: Construir
+        run: npm run build
+      - name: Configurar Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - name: Subir el sitio
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: './web/dist'
+      - name: Publicar en GitHub Pages
+        id: publicacion
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
