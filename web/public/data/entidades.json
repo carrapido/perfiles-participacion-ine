@@ -1,0 +1,2107 @@
+[
+  {
+    "clave": 1,
+    "nombre": "Aguascalientes",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 45.58869745003446,
+        "hombres": 37.83261635197485,
+        "brecha": 7.75608109805961
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 63.216182035598116,
+        "hombres": 54.24378625075599,
+        "brecha": 8.972395784842128
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 39.93949579831933,
+        "hombres": 32.606356894809004,
+        "brecha": 7.333138903510324
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 62.25792312949334,
+        "hombres": 53.336914702486304,
+        "brecha": 8.921008427007038
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 54.11555033294164,
+        "hombres": 44.56680368485538,
+        "brecha": 9.548746648086258
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 63.83432406797333,
+        "hombres": 53.10798658252582,
+        "brecha": 10.726337485447509
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 13.746669395881336,
+        "hombres": 10.742180165971988,
+        "brecha": 3.004489229909348
+      }
+    ],
+    "reparto": {
+      "hombres_0": 73.97706231341874,
+      "hombres_1": 10.225031175603673,
+      "hombres_2": 15.797906510977592,
+      "mujeres_0": 12.26677560449932,
+      "mujeres_1": 87.73322439550068
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 2,
+    "nombre": "Baja California",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 32.72894267255396,
+        "hombres": 28.043638745395217,
+        "brecha": 4.6853039271587456
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 55.82019483290802,
+        "hombres": 48.721896133949016,
+        "brecha": 7.098298698959006
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 32.54914032646661,
+        "hombres": 27.372872771474878,
+        "brecha": 5.176267554991735
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 54.56561374737868,
+        "hombres": 48.21096232241389,
+        "brecha": 6.354651424964786
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 40.14554493459434,
+        "hombres": 35.0564090236849,
+        "brecha": 5.089135910909441
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 50.529400134233065,
+        "hombres": 43.54889567540669,
+        "brecha": 6.980504458826374
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 8.980620486565085,
+        "hombres": 8.793574542800213,
+        "brecha": 0.18704594376487194
+      }
+    ],
+    "reparto": {
+      "hombres_0": 84.58093488916967,
+      "hombres_1": 0.0,
+      "hombres_2": 15.419065110830324,
+      "mujeres_0": 0.0,
+      "mujeres_1": 100.0
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 3,
+    "nombre": "Baja California Sur",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 34.79886265028679,
+        "hombres": 31.3716746896377,
+        "brecha": 3.4271879606490927
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 61.28008845370375,
+        "hombres": 53.075912865882444,
+        "brecha": 8.204175587821304
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 55.99622132253711,
+        "hombres": 46.974680053520174,
+        "brecha": 9.021541269016936
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 59.92150150504633,
+        "hombres": 52.676904088289746,
+        "brecha": 7.244597416756584
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 51.2037569484378,
+        "hombres": 44.796870495590014,
+        "brecha": 6.406886452847786
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 56.7154651905026,
+        "hombres": 49.54623760223453,
+        "brecha": 7.169227588268072
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 9.254594675305285,
+        "hombres": 9.062754381204563,
+        "brecha": 0.19184029410072156
+      }
+    ],
+    "reparto": {
+      "hombres_0": 61.27927755440679,
+      "hombres_1": 12.947539728125598,
+      "hombres_2": 25.773182717467613,
+      "mujeres_0": 31.85592523140361,
+      "mujeres_1": 68.1440747685964
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 4,
+    "nombre": "Campeche",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 66.84706816077401,
+        "hombres": 57.21528905658655,
+        "brecha": 9.631779104187466
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 70.81968892580248,
+        "hombres": 61.388216482711144,
+        "brecha": 9.431472443091337
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 64.30457713174482,
+        "hombres": 55.39971895364279,
+        "brecha": 8.904858178102032
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 72.80831589513261,
+        "hombres": 64.3618473080503,
+        "brecha": 8.446468587082308
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 65.86848924633263,
+        "hombres": 57.95965203779429,
+        "brecha": 7.908837208538337
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 67.17195767195767,
+        "hombres": 58.465201097619634,
+        "brecha": 8.706756574338037
+      }
+    ],
+    "reparto": {
+      "hombres_0": 0.0,
+      "hombres_1": 81.23913878573912,
+      "hombres_2": 18.76086121426089,
+      "mujeres_0": 98.26490499471382,
+      "mujeres_1": 1.735095005286184
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_1"
+    }
+  },
+  {
+    "clave": 5,
+    "nombre": "Coahuila",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 48.853409149517766,
+        "hombres": 39.02399909122194,
+        "brecha": 9.829410058295828
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 66.16650484746123,
+        "hombres": 56.18895964824868,
+        "brecha": 9.97754519921255
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 49.53304422184217,
+        "hombres": 39.069200702609464,
+        "brecha": 10.463843519232704
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 66.62475719177131,
+        "hombres": 57.883510377641834,
+        "brecha": 8.741246814129475
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 61.921261654312396,
+        "hombres": 51.938096148182204,
+        "brecha": 9.983165506130192
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 69.77096216532351,
+        "hombres": 59.377183361467594,
+        "brecha": 10.393778803855916
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 29.39961321361842,
+        "hombres": 18.91500665917281,
+        "brecha": 10.484606554445609
+      }
+    ],
+    "reparto": {
+      "hombres_0": 77.81939828662551,
+      "hombres_1": 2.031796682034023,
+      "hombres_2": 20.14880503134047,
+      "mujeres_0": 37.35748023747827,
+      "mujeres_1": 62.64251976252173
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 6,
+    "nombre": "Colima",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 61.87765786292602,
+        "hombres": 53.41837688055164,
+        "brecha": 8.45928098237438
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 66.31052680307378,
+        "hombres": 57.62515114873035,
+        "brecha": 8.685375654343432
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 63.80518901110215,
+        "hombres": 54.5246810970173,
+        "brecha": 9.28050791408485
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 65.69431051108968,
+        "hombres": 57.58448736114482,
+        "brecha": 8.109823149944866
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 55.47581947879291,
+        "hombres": 48.08995366203783,
+        "brecha": 7.385865816755079
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 60.2740523782608,
+        "hombres": 52.43089889862535,
+        "brecha": 7.843153479635447
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 9.523683215851143,
+        "hombres": 9.752745815443534,
+        "brecha": -0.22906259959239073
+      }
+    ],
+    "reparto": {
+      "hombres_0": 0.0,
+      "hombres_1": 85.6423420804718,
+      "hombres_2": 14.357657919528194,
+      "mujeres_0": 100.0,
+      "mujeres_1": 0.0
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_1"
+    }
+  },
+  {
+    "clave": 7,
+    "nombre": "Chiapas",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 40.51381677223638,
+        "hombres": 37.3334643875153,
+        "brecha": 3.1803523847210826
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 69.65660913082904,
+        "hombres": 62.34416032776902,
+        "brecha": 7.312448803060022
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 49.93883109400682,
+        "hombres": 41.712436600895415,
+        "brecha": 8.226394493111407
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 72.33844232495225,
+        "hombres": 63.98673648295827,
+        "brecha": 8.351705841993983
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 64.85738465076601,
+        "hombres": 57.23150112125566,
+        "brecha": 7.625883529510347
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 66.66302425573856,
+        "hombres": 56.45022136854401,
+        "brecha": 10.212802887194556
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 19.3870578060595,
+        "hombres": 20.211570548108465,
+        "brecha": -0.8245127420489666
+      }
+    ],
+    "reparto": {
+      "hombres_0": 39.328221481839314,
+      "hombres_1": 23.19661703666445,
+      "hombres_2": 37.47516148149624,
+      "mujeres_0": 34.33678904670776,
+      "mujeres_1": 65.66321095329224
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 8,
+    "nombre": "Chihuahua",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 33.3099862281977,
+        "hombres": 30.028818443804035,
+        "brecha": 3.2811677843936664
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 54.215696368646356,
+        "hombres": 49.071661889207384,
+        "brecha": 5.144034479438972
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 33.29533954470151,
+        "hombres": 29.909640989592873,
+        "brecha": 3.3856985551086396
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 55.399157221383454,
+        "hombres": 50.8745162685747,
+        "brecha": 4.524640952808753
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 48.19673205981389,
+        "hombres": 43.33676747837855,
+        "brecha": 4.859964581435342
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 54.79588723707753,
+        "hombres": 48.81860492549974,
+        "brecha": 5.977282311577788
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 12.831530125033568,
+        "hombres": 11.619495335806395,
+        "brecha": 1.2120347892271734
+      }
+    ],
+    "reparto": {
+      "hombres_0": 76.07006259675752,
+      "hombres_1": 3.0891889032960265,
+      "hombres_2": 20.840748499946443,
+      "mujeres_0": 1.6962410994347787,
+      "mujeres_1": 98.30375890056523
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 9,
+    "nombre": "Ciudad de México",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 43.92128241424141,
+        "hombres": 37.103492461022576,
+        "brecha": 6.817789953218835
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 69.71280723209105,
+        "hombres": 62.213560274505575,
+        "brecha": 7.499246957585477
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 46.9970701892755,
+        "hombres": 39.73023991290969,
+        "brecha": 7.266830276365809
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 73.7425766589188,
+        "hombres": 65.9183547279857,
+        "brecha": 7.824221930933092
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 54.70064960959551,
+        "hombres": 48.53754255352553,
+        "brecha": 6.163107056069975
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 73.25478440321373,
+        "hombres": 64.86102476118828,
+        "brecha": 8.393759642025458
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 15.221507885131812,
+        "hombres": 14.106851693462877,
+        "brecha": 1.114656191668935
+      }
+    ],
+    "reparto": {
+      "hombres_0": 77.53392984698672,
+      "hombres_1": 0.0,
+      "hombres_2": 22.46607015301327,
+      "mujeres_0": 0.0,
+      "mujeres_1": 100.0
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 10,
+    "nombre": "Durango",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 44.42479545805389,
+        "hombres": 37.67771227948507,
+        "brecha": 6.747083178568822
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 62.43040279409958,
+        "hombres": 53.78258151476715,
+        "brecha": 8.647821279332426
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 45.27229612103545,
+        "hombres": 37.321696385471135,
+        "brecha": 7.950599735564317
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 60.12128221967373,
+        "hombres": 51.64526805693817,
+        "brecha": 8.47601416273556
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 45.61734909244407,
+        "hombres": 38.374645323625465,
+        "brecha": 7.242703768818608
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 58.21964524475037,
+        "hombres": 49.01627282113684,
+        "brecha": 9.20337242361353
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 21.467915174882954,
+        "hombres": 18.07378012009882,
+        "brecha": 3.394135054784133
+      }
+    ],
+    "reparto": {
+      "hombres_0": 58.96393564007334,
+      "hombres_1": 19.95131282027173,
+      "hombres_2": 21.084751539654928,
+      "mujeres_0": 33.29421265442189,
+      "mujeres_1": 66.7057873455781
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 11,
+    "nombre": "Guanajuato",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 51.25214913946293,
+        "hombres": 42.26290888355954,
+        "brecha": 8.98924025590339
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 63.81980831393696,
+        "hombres": 53.27180080359029,
+        "brecha": 10.548007510346672
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 49.79640444291767,
+        "hombres": 39.9631821097262,
+        "brecha": 9.833222333191472
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 56.73796849739106,
+        "hombres": 47.54326581722887,
+        "brecha": 9.194702680162187
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 47.77507469459497,
+        "hombres": 38.969739799995516,
+        "brecha": 8.805334894599454
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 61.75527342118356,
+        "hombres": 49.32663590814366,
+        "brecha": 12.428637513039902
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 6.739730564727095,
+        "hombres": 6.360758407687028,
+        "brecha": 0.37897215704006726
+      }
+    ],
+    "reparto": {
+      "hombres_0": 28.5330283975127,
+      "hombres_1": 52.20948741046519,
+      "hombres_2": 19.25748419202211,
+      "mujeres_0": 67.65232507328405,
+      "mujeres_1": 32.347674926715946
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_1"
+    }
+  },
+  {
+    "clave": 12,
+    "nombre": "Guerrero",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 33.865686061704906,
+        "hombres": 29.779080716691283,
+        "brecha": 4.0866053450136235
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 62.67746092657411,
+        "hombres": 54.88486845277938,
+        "brecha": 7.792592473794734
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 60.47245927149866,
+        "hombres": 52.224485925662236,
+        "brecha": 8.24797334583642
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 66.63112753226568,
+        "hombres": 57.84960374574798,
+        "brecha": 8.781523786517702
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 60.23119852196562,
+        "hombres": 52.033377428843195,
+        "brecha": 8.197821093122421
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 61.31837207581028,
+        "hombres": 51.64028222484385,
+        "brecha": 9.67808985096643
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 14.642065900762118,
+        "hombres": 13.895187034789938,
+        "brecha": 0.7468788659721799
+      }
+    ],
+    "reparto": {
+      "hombres_0": 34.62351839845562,
+      "hombres_1": 27.899945513603004,
+      "hombres_2": 37.47653608794137,
+      "mujeres_0": 49.24499073430623,
+      "mujeres_1": 50.75500926569377
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_2"
+    }
+  },
+  {
+    "clave": 13,
+    "nombre": "Hidalgo",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 45.81571632004895,
+        "hombres": 39.21300125898452,
+        "brecha": 6.60271506106443
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 68.52596364686129,
+        "hombres": 60.721453070448106,
+        "brecha": 7.804510576413179
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 47.99549204542968,
+        "hombres": 41.13899903785726,
+        "brecha": 6.856493007572418
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 69.20380989833089,
+        "hombres": 61.14923662831837,
+        "brecha": 8.054573270012519
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 48.987057474709104,
+        "hombres": 42.690544836253416,
+        "brecha": 6.296512638455688
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 68.50612732082075,
+        "hombres": 58.10849923951783,
+        "brecha": 10.39762808130292
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 13.935485996808506,
+        "hombres": 13.046751513409776,
+        "brecha": 0.8887344833987303
+      }
+    ],
+    "reparto": {
+      "hombres_0": 59.05058576555834,
+      "hombres_1": 15.730930361525608,
+      "hombres_2": 25.218483872916053,
+      "mujeres_0": 25.548582434263142,
+      "mujeres_1": 74.45141756573686
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 14,
+    "nombre": "Jalisco",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 54.372138245860874,
+        "hombres": 47.758019426264475,
+        "brecha": 6.614118819596399
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 67.53900000347723,
+        "hombres": 60.00220365831949,
+        "brecha": 7.5367963451577396
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 55.59173101330066,
+        "hombres": 48.301596028900434,
+        "brecha": 7.2901349844002254
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 61.55986452815693,
+        "hombres": 54.57955109689053,
+        "brecha": 6.980313431266396
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 50.77229928680409,
+        "hombres": 43.787907374263,
+        "brecha": 6.984391912541092
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 61.01790586486696,
+        "hombres": 52.8614303961243,
+        "brecha": 8.156475468742663
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 6.947898719771074,
+        "hombres": 7.1404452264855856,
+        "brecha": -0.19254650671451135
+      }
+    ],
+    "reparto": {
+      "hombres_0": 29.884906497812235,
+      "hombres_1": 55.45494272092269,
+      "hombres_2": 14.660150781265076,
+      "mujeres_0": 71.87525515883435,
+      "mujeres_1": 28.124744841165644
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_1"
+    }
+  },
+  {
+    "clave": 15,
+    "nombre": "Estado de México",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 55.95797260621623,
+        "hombres": 45.30809202956485,
+        "brecha": 10.649880576651384
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 70.54353083755468,
+        "hombres": 59.84578702035581,
+        "brecha": 10.697743817198877
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 55.08455062553228,
+        "hombres": 44.45411059897611,
+        "brecha": 10.630440026556172
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 71.79098604930778,
+        "hombres": 62.04910737264323,
+        "brecha": 9.741878676664548
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 58.15499800360841,
+        "hombres": 48.438068959768984,
+        "brecha": 9.716929043839428
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 69.09107202669327,
+        "hombres": 58.05036494672197,
+        "brecha": 11.040707079971298
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 13.133731814645948,
+        "hombres": 11.356348929048927,
+        "brecha": 1.7773828855970208
+      }
+    ],
+    "reparto": {
+      "hombres_0": 55.73206211518468,
+      "hombres_1": 22.799213823559285,
+      "hombres_2": 21.468724061256033,
+      "mujeres_0": 52.08413495929993,
+      "mujeres_1": 47.91586504070007
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 16,
+    "nombre": "Michoacán",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 34.76422179428043,
+        "hombres": 30.3563063243237,
+        "brecha": 4.4079154699567304
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 54.21068647214579,
+        "hombres": 48.491143917189284,
+        "brecha": 5.719542554956504
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 57.82844411246756,
+        "hombres": 49.69886660357271,
+        "brecha": 8.129577508894847
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 60.71180209271109,
+        "hombres": 53.178517235665105,
+        "brecha": 7.5332848570459845
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 51.96481967273261,
+        "hombres": 44.21839722118844,
+        "brecha": 7.74642245154417
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 58.13127677309786,
+        "hombres": 49.39900064266962,
+        "brecha": 8.73227613042824
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 11.165304850155234,
+        "hombres": 10.474227762408315,
+        "brecha": 0.691077087746919
+      }
+    ],
+    "reparto": {
+      "hombres_0": 33.97231532576089,
+      "hombres_1": 40.17158199179244,
+      "hombres_2": 25.856102682446664,
+      "mujeres_0": 52.088812755709945,
+      "mujeres_1": 47.911187244290055
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_1"
+    }
+  },
+  {
+    "clave": 17,
+    "nombre": "Morelos",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 53.26649975773704,
+        "hombres": 44.236267882951246,
+        "brecha": 9.030231874785791
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 68.50957815810088,
+        "hombres": 59.185157696984554,
+        "brecha": 9.324420461116325
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 58.79911539716492,
+        "hombres": 49.69568694303049,
+        "brecha": 9.10342845413443
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 69.44982014040919,
+        "hombres": 60.95485260843628,
+        "brecha": 8.494967531972904
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 55.544854938938045,
+        "hombres": 47.80070483082006,
+        "brecha": 7.744150108117985
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 66.0088670929424,
+        "hombres": 56.34958245905153,
+        "brecha": 9.659284633890863
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 10.949291752424866,
+        "hombres": 10.574706092299841,
+        "brecha": 0.3745856601250246
+      }
+    ],
+    "reparto": {
+      "hombres_0": 43.15574159871682,
+      "hombres_1": 33.97259278716377,
+      "hombres_2": 22.871665614119408,
+      "mujeres_0": 58.7797215003297,
+      "mujeres_1": 41.2202784996703
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 18,
+    "nombre": "Nayarit",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 44.39142665327659,
+        "hombres": 38.683640288054335,
+        "brecha": 5.707786365222255
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 64.86460305578794,
+        "hombres": 56.909481657373874,
+        "brecha": 7.9551213984140645
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 43.977029223299965,
+        "hombres": 37.42929075640964,
+        "brecha": 6.547738466890323
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 59.0831193122208,
+        "hombres": 51.97790022890443,
+        "brecha": 7.105219083316371
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 57.06920021630895,
+        "hombres": 47.65320723152034,
+        "brecha": 9.415992984788609
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 60.45321051928981,
+        "hombres": 50.91289714437723,
+        "brecha": 9.540313374912579
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 11.998992602943387,
+        "hombres": 11.189534208999314,
+        "brecha": 0.8094583939440732
+      }
+    ],
+    "reparto": {
+      "hombres_0": 46.676467814801164,
+      "hombres_1": 28.01663909200792,
+      "hombres_2": 25.306893093190915,
+      "mujeres_0": 42.00455336151294,
+      "mujeres_1": 57.99544663848706
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 19,
+    "nombre": "Nuevo León",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 56.36877881644668,
+        "hombres": 50.03871840458104,
+        "brecha": 6.330060411865638
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 63.142228283181936,
+        "hombres": 56.45313474661247,
+        "brecha": 6.689093536569466
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 61.41823757384204,
+        "hombres": 54.43771401596246,
+        "brecha": 6.980523557879579
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 57.52937062542653,
+        "hombres": 52.09876571127492,
+        "brecha": 5.430604914151608
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 54.26134192777034,
+        "hombres": 46.67319969748322,
+        "brecha": 7.588142230287119
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 59.493300040331306,
+        "hombres": 51.888062884798394,
+        "brecha": 7.605237155532912
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 11.068364394372225,
+        "hombres": 9.897923222930487,
+        "brecha": 1.1704411714417375
+      }
+    ],
+    "reparto": {
+      "hombres_0": 0.0,
+      "hombres_1": 83.99544018347319,
+      "hombres_2": 16.004559816526815,
+      "mujeres_0": 98.5604352784174,
+      "mujeres_1": 1.4395647215825995
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_1"
+    }
+  },
+  {
+    "clave": 20,
+    "nombre": "Oaxaca",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 43.360487125002166,
+        "hombres": 37.99298747837548,
+        "brecha": 5.367499646626683
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 63.74372390251589,
+        "hombres": 56.75384784613692,
+        "brecha": 6.989876056378968
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 43.586791319390876,
+        "hombres": 37.39794589469384,
+        "brecha": 6.1888454246970355
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 69.49046786503209,
+        "hombres": 61.39094024875689,
+        "brecha": 8.099527616275196
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 59.41469240978331,
+        "hombres": 51.70004939293317,
+        "brecha": 7.71464301685014
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 62.89959982799115,
+        "hombres": 53.8023351801639,
+        "brecha": 9.097264647827252
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 16.39891913459092,
+        "hombres": 15.360144160440155,
+        "brecha": 1.0387749741507637
+      }
+    ],
+    "reparto": {
+      "hombres_0": 48.892722335660956,
+      "hombres_1": 20.72464389252335,
+      "hombres_2": 30.382633771815698,
+      "mujeres_0": 30.818327234826825,
+      "mujeres_1": 69.18167276517318
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 21,
+    "nombre": "Puebla",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 40.25316148278273,
+        "hombres": 34.42454637336062,
+        "brecha": 5.82861510942211
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 65.88730585700179,
+        "hombres": 57.37424489639247,
+        "brecha": 8.513060960609323
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 44.63716412847803,
+        "hombres": 36.839006838347494,
+        "brecha": 7.798157290130533
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 71.36000387856849,
+        "hombres": 62.948162742809686,
+        "brecha": 8.411841135758806
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 59.35327000214892,
+        "hombres": 50.83279996358532,
+        "brecha": 8.520470038563595
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 69.5378874226009,
+        "hombres": 58.25931629539652,
+        "brecha": 11.27857112720438
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 13.787729523917726,
+        "hombres": 12.326220248649593,
+        "brecha": 1.4615092752681331
+      }
+    ],
+    "reparto": {
+      "hombres_0": 67.35337684070046,
+      "hombres_1": 7.322600592936089,
+      "hombres_2": 25.324022566363446,
+      "mujeres_0": 13.336028129741969,
+      "mujeres_1": 86.66397187025804
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 22,
+    "nombre": "Querétaro",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 62.94204268958743,
+        "hombres": 53.54672305210489,
+        "brecha": 9.395319637482544
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 70.30446206504027,
+        "hombres": 60.96560418463499,
+        "brecha": 9.338857880405278
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 61.514562885413746,
+        "hombres": 51.10769439343333,
+        "brecha": 10.406868491980418
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 66.96649801414475,
+        "hombres": 57.473870753368104,
+        "brecha": 9.492627260776644
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 55.64928916456252,
+        "hombres": 46.168355629592284,
+        "brecha": 9.480933534970234
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 66.28656529007672,
+        "hombres": 55.311304262511484,
+        "brecha": 10.975261027565239
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 11.791412324821277,
+        "hombres": 9.621325424927669,
+        "brecha": 2.170086899893608
+      }
+    ],
+    "reparto": {
+      "hombres_0": 3.5022525222364376,
+      "hombres_1": 82.78743905548811,
+      "hombres_2": 13.710308422275451,
+      "mujeres_0": 95.9683639813208,
+      "mujeres_1": 4.03163601867919
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_1"
+    }
+  },
+  {
+    "clave": 23,
+    "nombre": "Quintana Roo",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 39.79665564311667,
+        "hombres": 33.16251512536578,
+        "brecha": 6.634140517750893
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 60.8912381577607,
+        "hombres": 51.97872903644499,
+        "brecha": 8.912509121315708
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 44.23891586838313,
+        "hombres": 35.656259017718014,
+        "brecha": 8.582656850665117
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 62.10726614523888,
+        "hombres": 54.746342773901915,
+        "brecha": 7.360923371336966
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 46.56881612269915,
+        "hombres": 40.203588456478535,
+        "brecha": 6.365227666220612
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 58.75633664852961,
+        "hombres": 50.788716789399466,
+        "brecha": 7.967619859130146
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 14.799972996692095,
+        "hombres": 12.42586442871845,
+        "brecha": 2.3741085679736447
+      }
+    ],
+    "reparto": {
+      "hombres_0": 68.86340725806451,
+      "hombres_1": 13.435305020811654,
+      "hombres_2": 17.70128772112383,
+      "mujeres_0": 18.598879258526747,
+      "mujeres_1": 81.40112074147325
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 24,
+    "nombre": "San Luis Potosí",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 58.04567975939755,
+        "hombres": 50.79025251831028,
+        "brecha": 7.255427241087268
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 66.9976089401896,
+        "hombres": 58.5190952602945,
+        "brecha": 8.478513679895094
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 60.86651995665724,
+        "hombres": 51.795199738434185,
+        "brecha": 9.071320218223057
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 67.08294600735671,
+        "hombres": 57.990164357315386,
+        "brecha": 9.092781650041324
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 63.13666196836652,
+        "hombres": 52.665390494121986,
+        "brecha": 10.471271474244531
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 66.44820314066662,
+        "hombres": 55.58021869738153,
+        "brecha": 10.867984443285089
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 18.556840230803154,
+        "hombres": 14.17058040178381,
+        "brecha": 4.386259829019343
+      }
+    ],
+    "reparto": {
+      "hombres_0": 4.746271045631579,
+      "hombres_1": 69.2014473754411,
+      "hombres_2": 26.05228157892731,
+      "mujeres_0": 92.16944902742097,
+      "mujeres_1": 7.830550972579029
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_1"
+    }
+  },
+  {
+    "clave": 25,
+    "nombre": "Sinaloa",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 43.09872969519579,
+        "hombres": 38.46451881411682,
+        "brecha": 4.634210881078971
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 63.611839381043104,
+        "hombres": 56.50327821293879,
+        "brecha": 7.108561168104316
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 40.052982795314605,
+        "hombres": 35.07834165793968,
+        "brecha": 4.974641137374924
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 62.566332644220005,
+        "hombres": 55.72119422002143,
+        "brecha": 6.8451384241985735
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 52.34973225528403,
+        "hombres": 45.68196151514107,
+        "brecha": 6.667770740142963
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 58.57549810757445,
+        "hombres": 50.23151993756592,
+        "brecha": 8.343978170008526
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 11.84208804973852,
+        "hombres": 11.841673229250324,
+        "brecha": 0.000414820488195744
+      }
+    ],
+    "reparto": {
+      "hombres_0": 60.175982085206165,
+      "hombres_1": 17.440005294308083,
+      "hombres_2": 22.384012620485752,
+      "mujeres_0": 22.752292181080403,
+      "mujeres_1": 77.2477078189196
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 26,
+    "nombre": "Sonora",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 53.96493913028137,
+        "hombres": 46.54895363315348,
+        "brecha": 7.415985497127892
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 61.52257758813917,
+        "hombres": 53.26725420999916,
+        "brecha": 8.255323378140012
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 55.012745022311215,
+        "hombres": 46.4578730704903,
+        "brecha": 8.554871951820914
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 53.64438533659285,
+        "hombres": 47.08112662493982,
+        "brecha": 6.563258711653027
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 45.486221808445094,
+        "hombres": 39.53241644825022,
+        "brecha": 5.9538053601948775
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 53.14887565515613,
+        "hombres": 45.90695922235636,
+        "brecha": 7.241916432799769
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 9.356273320016584,
+        "hombres": 9.282377634238385,
+        "brecha": 0.07389568577819894
+      }
+    ],
+    "reparto": {
+      "hombres_0": 0.0,
+      "hombres_1": 82.27311493054748,
+      "hombres_2": 17.726885069452514,
+      "mujeres_0": 93.80202291640741,
+      "mujeres_1": 6.197977083592587
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_1"
+    }
+  },
+  {
+    "clave": 27,
+    "nombre": "Tabasco",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 42.926698254528844,
+        "hombres": 38.39226029696891,
+        "brecha": 4.534437957559938
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 74.78728156440225,
+        "hombres": 65.15153878108292,
+        "brecha": 9.63574278331933
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 61.61049270227423,
+        "hombres": 52.2757747766166,
+        "brecha": 9.334717925657628
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 74.30839290106071,
+        "hombres": 65.0663528035426,
+        "brecha": 9.242040097518114
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 55.49118510322567,
+        "hombres": 49.39542138647262,
+        "brecha": 6.095763716753048
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 64.0597740564697,
+        "hombres": 55.365203131440055,
+        "brecha": 8.694570925029652
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 14.00666285565026,
+        "hombres": 14.376674707975065,
+        "brecha": -0.3700118523248044
+      }
+    ],
+    "reparto": {
+      "hombres_0": 34.32756003312172,
+      "hombres_1": 35.741558561045174,
+      "hombres_2": 29.9308814058331,
+      "mujeres_0": 52.980448816281296,
+      "mujeres_1": 47.019551183718704
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_1"
+    }
+  },
+  {
+    "clave": 28,
+    "nombre": "Tamaulipas",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 44.033990033181915,
+        "hombres": 37.19541901041203,
+        "brecha": 6.838571022769884
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 60.880222666400506,
+        "hombres": 53.658934781149604,
+        "brecha": 7.221287885250902
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 48.00604700405008,
+        "hombres": 39.919246613884596,
+        "brecha": 8.086800390165486
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 63.8827784973524,
+        "hombres": 56.567858289851806,
+        "brecha": 7.314920207500592
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 55.39372339402102,
+        "hombres": 47.74052672223258,
+        "brecha": 7.653196671788443
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 59.23750611335519,
+        "hombres": 51.413422076086825,
+        "brecha": 7.8240840372683635
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 14.942337270815143,
+        "hombres": 12.755002718202439,
+        "brecha": 2.187334552612704
+      }
+    ],
+    "reparto": {
+      "hombres_0": 66.20325737314711,
+      "hombres_1": 9.065900983759283,
+      "hombres_2": 24.730841643093605,
+      "mujeres_0": 36.67307004575082,
+      "mujeres_1": 63.32692995424918
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 29,
+    "nombre": "Tlaxcala",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 38.94734224432701,
+        "hombres": 32.77734253014623,
+        "brecha": 6.169999714180783
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 67.15276938784696,
+        "hombres": 58.54975970114798,
+        "brecha": 8.603009686698982
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 42.241143467087646,
+        "hombres": 34.96388461020802,
+        "brecha": 7.277258856879627
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 69.21376485259985,
+        "hombres": 61.04452363821867,
+        "brecha": 8.16924121438118
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 70.17517450432523,
+        "hombres": 60.868337888917196,
+        "brecha": 9.30683661540803
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 75.33384479381263,
+        "hombres": 64.2723922933123,
+        "brecha": 11.061452500500337
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 15.250900690001753,
+        "hombres": 13.44706080431018,
+        "brecha": 1.8038398856915734
+      }
+    ],
+    "reparto": {
+      "hombres_0": 77.38380946579765,
+      "hombres_1": 0.8954132911006883,
+      "hombres_2": 21.72077724310166,
+      "mujeres_0": 2.6409923817527448,
+      "mujeres_1": 97.35900761824726
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_1",
+      "hombres": "hombres_0"
+    }
+  },
+  {
+    "clave": 30,
+    "nombre": "Veracruz",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 49.54043907562474,
+        "hombres": 43.98726788703338,
+        "brecha": 5.553171188591357
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 69.1130999620599,
+        "hombres": 61.62477123325941,
+        "brecha": 7.4883287288004965
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 47.87604790336037,
+        "hombres": 41.95100450767768,
+        "brecha": 5.9250433956826924
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 67.756654958518,
+        "hombres": 60.6079464949843,
+        "brecha": 7.148708463533701
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 62.67474074308618,
+        "hombres": 55.71592664618964,
+        "brecha": 6.958814096896546
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 62.054194286481206,
+        "hombres": 54.32926493041063,
+        "brecha": 7.724929356070575
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 20.6554840898632,
+        "hombres": 18.299453164686646,
+        "brecha": 2.3560309251765545
+      }
+    ],
+    "reparto": {
+      "hombres_0": 32.029230728934756,
+      "hombres_1": 32.606266970498616,
+      "hombres_2": 35.36450230056663,
+      "mujeres_0": 53.29589316257677,
+      "mujeres_1": 46.70410683742323
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_2"
+    }
+  },
+  {
+    "clave": 31,
+    "nombre": "Yucatán",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 59.552048219735816,
+        "hombres": 51.710589873618126,
+        "brecha": 7.84145834611769
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 81.07117186136558,
+        "hombres": 72.3065157827572,
+        "brecha": 8.764656078608382
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 75.15408633477651,
+        "hombres": 65.6694459577166,
+        "brecha": 9.484640377059904
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 78.40666551592814,
+        "hombres": 70.31383488797837,
+        "brecha": 8.092830627949766
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 66.51130687856396,
+        "hombres": 59.439704798596374,
+        "brecha": 7.071602079967583
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 75.51148942667379,
+        "hombres": 67.15384062475962,
+        "brecha": 8.357648801914166
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 13.124574272128541,
+        "hombres": 12.16644146725809,
+        "brecha": 0.9581328048704503
+      }
+    ],
+    "reparto": {
+      "hombres_0": 32.46932790570279,
+      "hombres_1": 17.28380777876424,
+      "hombres_2": 50.246864315532974,
+      "mujeres_0": 73.62160481886217,
+      "mujeres_1": 26.378395181137826
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_2"
+    }
+  },
+  {
+    "clave": 32,
+    "nombre": "Zacatecas",
+    "participacion": [
+      {
+        "anio": 2009,
+        "tipo": "federal",
+        "mujeres": 47.513244346576485,
+        "hombres": 39.73386370429995,
+        "brecha": 7.779380642276536
+      },
+      {
+        "anio": 2012,
+        "tipo": "federal",
+        "mujeres": 63.45051613631975,
+        "hombres": 55.708768605018435,
+        "brecha": 7.741747531301314
+      },
+      {
+        "anio": 2015,
+        "tipo": "federal",
+        "mujeres": 48.283527501739485,
+        "hombres": 40.701080251273794,
+        "brecha": 7.582447250465691
+      },
+      {
+        "anio": 2018,
+        "tipo": "federal",
+        "mujeres": 68.38693912145975,
+        "hombres": 59.16556798212605,
+        "brecha": 9.221371139333698
+      },
+      {
+        "anio": 2021,
+        "tipo": "federal",
+        "mujeres": 61.21925694222154,
+        "hombres": 50.86808034966527,
+        "brecha": 10.351176592556271
+      },
+      {
+        "anio": 2024,
+        "tipo": "federal",
+        "mujeres": 64.3341065810798,
+        "hombres": 53.112709504365206,
+        "brecha": 11.221397076714588
+      },
+      {
+        "anio": 2025,
+        "tipo": "judicial",
+        "mujeres": 12.79592265721867,
+        "hombres": 10.301643252224194,
+        "brecha": 2.494279404994476
+      }
+    ],
+    "reparto": {
+      "hombres_0": 37.496514645051455,
+      "hombres_1": 36.18454503406627,
+      "hombres_2": 26.31894032088228,
+      "mujeres_0": 54.13280042990529,
+      "mujeres_1": 45.86719957009471
+    },
+    "perfil_principal": {
+      "mujeres": "mujeres_0",
+      "hombres": "hombres_0"
+    }
+  }
+]

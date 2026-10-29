@@ -1,0 +1,582 @@
+[
+  {
+    "id": "hombres_1",
+    "orden": 1,
+    "nombre": "Hombres en rezago persistente",
+    "sexo": "hombres",
+    "color": "#2A78D6",
+    "pct_lista_nominal": 14.35651350093836,
+    "pct_de_su_sexo": 29.90067251320633,
+    "trayectoria": [
+      {
+        "anio": 2009,
+        "participacion": 44.63565277700323
+      },
+      {
+        "anio": 2012,
+        "participacion": 56.14404443168782
+      },
+      {
+        "anio": 2015,
+        "participacion": 47.71171472752689
+      },
+      {
+        "anio": 2018,
+        "participacion": 54.05119209624645
+      },
+      {
+        "anio": 2021,
+        "participacion": 45.75738317412098
+      },
+      {
+        "anio": 2024,
+        "participacion": 48.24985644472038
+      }
+    ],
+    "judicial_2025": 8.80921158940703,
+    "nivel": 49.904284810670795,
+    "tendencia": -0.4754566275424334,
+    "ciclo": 6.427703559128707,
+    "ventaja": -10.940909183939137,
+    "rural": 29.94910833298979,
+    "etapas": [
+      {
+        "etapa": "18-24",
+        "pct": 18.751710560067426
+      },
+      {
+        "etapa": "25-34",
+        "pct": 27.722732097951106
+      },
+      {
+        "etapa": "35-44",
+        "pct": 24.022661843316705
+      },
+      {
+        "etapa": "45-59",
+        "pct": 26.548335990069305
+      },
+      {
+        "etapa": "60-69",
+        "pct": 2.452112906698181
+      },
+      {
+        "etapa": "70+",
+        "pct": 0.502446601897276
+      }
+    ],
+    "entidades_principales": [
+      {
+        "clave": 6,
+        "nombre": "Colima",
+        "pct": 85.6423420804718
+      },
+      {
+        "clave": 19,
+        "nombre": "Nuevo León",
+        "pct": 83.99544018347319
+      },
+      {
+        "clave": 22,
+        "nombre": "Querétaro",
+        "pct": 82.78743905548811
+      },
+      {
+        "clave": 26,
+        "nombre": "Sonora",
+        "pct": 82.27311493054748
+      },
+      {
+        "clave": 4,
+        "nombre": "Campeche",
+        "pct": 81.23913878573912
+      }
+    ],
+    "resumen": "Hombres de 18 a 59 años con participación baja y plana; no reaccionan ni a las elecciones presidenciales.",
+    "quienes": "El 30% de los hombres del país, casi todos de 18 a 59 años (97%). Agrupa a más de un tercio de los hombres de 18 a 44 años. El 30% de su lista nominal vive en secciones rurales y el 18% en mixtas.",
+    "como_votan": "Promedio de 49.9%, plano (−0.5 puntos por elección). Apenas suben cuando se elige presidente (+6.4 puntos). Votan 10.9 puntos menos que las mujeres de su edad y municipio, la mayor distancia de todos los perfiles. En 2024 votó el 48.2%, menos que en 2012 (56.1%).",
+    "donde": "En Colima, Nuevo León, Querétaro, Sonora y Campeche agrupa a más del 80% de los hombres.",
+    "lectura": "No responden ni al estímulo de una elección presidencial, así que su alejamiento es estructural. En esas mismas entidades casi todas las mujeres son de voto constante: el electorado se parte en dos por sexo.",
+    "objetivo": "Que voten en cualquier tipo de elección. La palanca es la facilidad y los pares, no la importancia de la elección.",
+    "estrategias": [
+      {
+        "estrategia": "\"Votar es rápido y está cerca\": dónde está tu casilla y cuánto tarda votar",
+        "canal": "Centros de trabajo, transporte y radio local; dos semanas antes y el día de la elección",
+        "indicador": "Participación del perfil en 2027 contra 45.8% en 2021"
+      },
+      {
+        "estrategia": "Mensajes con voces de hombres de la comunidad (deportistas, líderes locales)",
+        "canal": "Ligas deportivas municipales y redes sociales locales; temporada previa",
+        "indicador": "Ventaja frente al otro sexo, hoy de −10.9 puntos"
+      },
+      {
+        "estrategia": "Priorizar los distritos donde el perfil agrupa a la mayoría de los hombres",
+        "canal": "Juntas Distritales Ejecutivas de Sonora, Nuevo León, Colima, Campeche y Querétaro",
+        "indicador": "Brecha municipal en esos distritos"
+      }
+    ]
+  },
+  {
+    "id": "hombres_0",
+    "orden": 2,
+    "nombre": "Hombres de voto presidencial",
+    "sexo": "hombres",
+    "color": "#E8693A",
+    "pct_lista_nominal": 22.292641794033166,
+    "pct_de_su_sexo": 46.42944693320106,
+    "trayectoria": [
+      {
+        "anio": 2009,
+        "participacion": 33.08844678165209
+      },
+      {
+        "anio": 2012,
+        "participacion": 53.65103924596025
+      },
+      {
+        "anio": 2015,
+        "participacion": 33.110253047844125
+      },
+      {
+        "anio": 2018,
+        "participacion": 55.04963884477134
+      },
+      {
+        "anio": 2021,
+        "participacion": 40.455565040995616
+      },
+      {
+        "anio": 2024,
+        "participacion": 50.32201132210968
+      }
+    ],
+    "judicial_2025": 9.270919391622117,
+    "nivel": 44.45069408677384,
+    "tendencia": 1.8494857828370586,
+    "ciclo": 17.263813336177456,
+    "ventaja": -8.945014350771618,
+    "rural": 6.635790085401097,
+    "etapas": [
+      {
+        "etapa": "18-24",
+        "pct": 21.274516984370536
+      },
+      {
+        "etapa": "25-34",
+        "pct": 31.018173573536007
+      },
+      {
+        "etapa": "35-44",
+        "pct": 24.843246031699575
+      },
+      {
+        "etapa": "45-59",
+        "pct": 22.590800918692217
+      },
+      {
+        "etapa": "60-69",
+        "pct": 0.23497366265997524
+      },
+      {
+        "etapa": "70+",
+        "pct": 0.03828882904169196
+      }
+    ],
+    "entidades_principales": [
+      {
+        "clave": 2,
+        "nombre": "Baja California",
+        "pct": 84.58093488916967
+      },
+      {
+        "clave": 5,
+        "nombre": "Coahuila",
+        "pct": 77.81939828662551
+      },
+      {
+        "clave": 9,
+        "nombre": "Ciudad de México",
+        "pct": 77.53392984698672
+      },
+      {
+        "clave": 29,
+        "nombre": "Tlaxcala",
+        "pct": 77.38380946579765
+      },
+      {
+        "clave": 8,
+        "nombre": "Chihuahua",
+        "pct": 76.07006259675752
+      }
+    ],
+    "resumen": "Hombres de 18 a 59 años, sobre todo urbanos, que votan en las presidenciales y se ausentan en las intermedias.",
+    "quienes": "El 46% de los hombres, el perfil masculino más grande. Seis de cada diez hombres de 18 a 44 años están aquí. El 84% de su lista nominal vive en secciones urbanas.",
+    "como_votan": "El nivel más bajo (44.5%) y un ciclo muy fuerte (+17.3 puntos). En las presidenciales vota alrededor de la mitad (entre 50% y 55%); en las intermedias cae a entre 33% y 41%. Su tendencia es ligeramente positiva (+1.8 puntos por elección).",
+    "donde": "Baja California (85% de los hombres), Coahuila y Ciudad de México (78%), Tlaxcala (77%) y Chihuahua (76%).",
+    "lectura": "Sí vota cuando percibe que la elección importa. Su reto es la elección intermedia.",
+    "objetivo": "Reducir su caída en las intermedias. Ya votan cuando la elección les parece importante; el mensaje debe mostrar qué se decide en 2027.",
+    "estrategias": [
+      {
+        "estrategia": "\"En 2027 también se decide\": qué cargos se eligen y qué cambia en su ciudad",
+        "canal": "Plataformas digitales y de video; periodo de campañas de la intermedia",
+        "indicador": "Participación del perfil en 2027 contra 40.5% en 2021"
+      },
+      {
+        "estrategia": "Alianzas con empleadores para facilitar el tiempo para votar",
+        "canal": "Parques industriales y empresas de Chihuahua, Baja California y Coahuila",
+        "indicador": "Participación de hombres de 18 a 44 años en esas entidades"
+      },
+      {
+        "estrategia": "Recordatorios masivos sin datos personales",
+        "canal": "Transporte público, pantallas urbanas y redes; la semana de la elección",
+        "indicador": "Ciclo presidencial del perfil, hoy de +17.3 puntos"
+      }
+    ]
+  },
+  {
+    "id": "hombres_2",
+    "orden": 3,
+    "nombre": "Hombres mayores comprometidos",
+    "sexo": "hombres",
+    "color": "#1FB07A",
+    "pct_lista_nominal": 11.364860090794362,
+    "pct_de_su_sexo": 23.669880553592606,
+    "trayectoria": [
+      {
+        "anio": 2009,
+        "participacion": 53.129173041208226
+      },
+      {
+        "anio": 2012,
+        "participacion": 70.7763602101071
+      },
+      {
+        "anio": 2015,
+        "participacion": 59.22114919400843
+      },
+      {
+        "anio": 2018,
+        "participacion": 70.63283508108354
+      },
+      {
+        "anio": 2021,
+        "participacion": 65.61706247886092
+      },
+      {
+        "anio": 2024,
+        "participacion": 71.70381072671405
+      }
+    ],
+    "judicial_2025": 22.041325552049628,
+    "nivel": 65.20656922315523,
+    "tendencia": 2.454221497790468,
+    "ciclo": 11.52050089609374,
+    "ventaja": -0.05253310391489577,
+    "rural": 23.44217231448349,
+    "etapas": [
+      {
+        "etapa": "18-24",
+        "pct": 0.8340040385161681
+      },
+      {
+        "etapa": "25-34",
+        "pct": 1.0678633095905807
+      },
+      {
+        "etapa": "35-44",
+        "pct": 3.1607708802985184
+      },
+      {
+        "etapa": "45-59",
+        "pct": 23.2895752071923
+      },
+      {
+        "etapa": "60-69",
+        "pct": 39.45067392083069
+      },
+      {
+        "etapa": "70+",
+        "pct": 32.19711264357174
+      }
+    ],
+    "entidades_principales": [
+      {
+        "clave": 31,
+        "nombre": "Yucatán",
+        "pct": 50.246864315532974
+      },
+      {
+        "clave": 12,
+        "nombre": "Guerrero",
+        "pct": 37.47653608794137
+      },
+      {
+        "clave": 7,
+        "nombre": "Chiapas",
+        "pct": 37.47516148149624
+      },
+      {
+        "clave": 30,
+        "nombre": "Veracruz",
+        "pct": 35.36450230056663
+      },
+      {
+        "clave": 20,
+        "nombre": "Oaxaca",
+        "pct": 30.382633771815698
+      }
+    ],
+    "resumen": "Hombres de 45 años o más que votan tanto como las mujeres de su edad; la participación más alta de los cinco perfiles.",
+    "quienes": "El 24% de los hombres. Agrupa a 9 de cada 10 hombres de 60 a 69 años, a casi todos los de 70 o más y a una cuarta parte de los de 45 a 59. El 23% vive en secciones rurales.",
+    "como_votan": "El promedio más alto de los cinco perfiles (65.2%), con tendencia al alza (+2.5 puntos por elección) y un ciclo moderado (+11.5). En 2024 votó el 71.7%. Votan igual que las mujeres de su edad y municipio (−0.1 puntos): en este perfil la brecha desaparece.",
+    "donde": "Yucatán (50% de los hombres), Guerrero y Chiapas (37%), Veracruz (35%) y Oaxaca (30%), aunque está presente en 2,035 municipios.",
+    "lectura": "Es el hábito de voto de las generaciones mayores. Explica por qué la ventaja femenina se invierte en las edades avanzadas, y es un aliado natural para acercar a los hombres jóvenes a las urnas.",
+    "objetivo": "Conservar su participación y aprovecharla para acercar a las urnas a los hombres jóvenes de sus familias y comunidades.",
+    "estrategias": [
+      {
+        "estrategia": "\"Tu voto también enseña\": invitarlos a ir a votar con hijos y nietos",
+        "canal": "Centros comunitarios, radio local y espacios para personas adultas mayores; la semana de la elección",
+        "indicador": "Participación de los hombres de 18 a 44 años en sus municipios"
+      },
+      {
+        "estrategia": "Casillas accesibles para personas mayores",
+        "canal": "Juntas Distritales de Yucatán, Guerrero, Chiapas, Veracruz y Oaxaca; planeación de casillas",
+        "indicador": "Mantener su participación por encima del 70%"
+      },
+      {
+        "estrategia": "Invitarlos a ser funcionarios de casilla y observadores electorales",
+        "canal": "Capacitación electoral del INE; reclutamiento previo a la jornada",
+        "indicador": "Participación del perfil en la intermedia, contra 65.6% en 2021"
+      }
+    ]
+  },
+  {
+    "id": "mujeres_1",
+    "orden": 4,
+    "nombre": "Mujeres urbanas en ascenso",
+    "sexo": "mujeres",
+    "color": "#12366B",
+    "pct_lista_nominal": 28.502132027793703,
+    "pct_de_su_sexo": 54.8265695827364,
+    "trayectoria": [
+      {
+        "anio": 2009,
+        "participacion": 40.87421827968026
+      },
+      {
+        "anio": 2012,
+        "participacion": 63.574517487287274
+      },
+      {
+        "anio": 2015,
+        "participacion": 43.12578742561102
+      },
+      {
+        "anio": 2018,
+        "participacion": 64.94172191532401
+      },
+      {
+        "anio": 2021,
+        "participacion": 51.59765234270208
+      },
+      {
+        "anio": 2024,
+        "participacion": 63.22401613890393
+      }
+    ],
+    "judicial_2025": 13.353734656504864,
+    "nivel": 54.829403130523566,
+    "tendencia": 2.666809901863238,
+    "ciclo": 18.312791575376885,
+    "ventaja": 6.130566778381032,
+    "rural": 8.69925346852391,
+    "etapas": [
+      {
+        "etapa": "18-24",
+        "pct": 15.983536716796538
+      },
+      {
+        "etapa": "25-34",
+        "pct": 24.0750497759151
+      },
+      {
+        "etapa": "35-44",
+        "pct": 18.529989941532115
+      },
+      {
+        "etapa": "45-59",
+        "pct": 20.109202926714573
+      },
+      {
+        "etapa": "60-69",
+        "pct": 9.332362659878394
+      },
+      {
+        "etapa": "70+",
+        "pct": 11.96985797916328
+      }
+    ],
+    "entidades_principales": [
+      {
+        "clave": 9,
+        "nombre": "Ciudad de México",
+        "pct": 100.0
+      },
+      {
+        "clave": 2,
+        "nombre": "Baja California",
+        "pct": 100.0
+      },
+      {
+        "clave": 8,
+        "nombre": "Chihuahua",
+        "pct": 98.30375890056523
+      },
+      {
+        "clave": 29,
+        "nombre": "Tlaxcala",
+        "pct": 97.35900761824726
+      },
+      {
+        "clave": 1,
+        "nombre": "Aguascalientes",
+        "pct": 87.73322439550068
+      }
+    ],
+    "resumen": "Mujeres de todas las edades en ciudades; suben en cada elección y tienen el mayor efecto presidencial.",
+    "quienes": "El 55% de las mujeres del país, de todas las edades: 6 de cada 10 mujeres de 18 a 34 años y 7 de cada 10 de 70 o más. El 82% vive en secciones urbanas.",
+    "como_votan": "La mayor tendencia al alza (+2.7 puntos por elección) y el mayor ciclo presidencial de los cinco perfiles (+18.3 puntos). Pasaron de 40.9% en 2009 a 63.2% en 2024, pero en la intermedia de 2021 cayeron a 51.6%. Votan 6.1 puntos más que los hombres de su edad y municipio.",
+    "donde": "Baja California y Ciudad de México (100% de las mujeres), Chihuahua (98%), Tlaxcala (97%) y Aguascalientes (88%).",
+    "lectura": "Su crecimiento, junto con la participación plana de los hombres en rezago persistente, es lo que amplía la brecha nacional. Aun así, su voto todavía depende del ciclo presidencial.",
+    "objetivo": "Que su alza no dependa de la elección presidencial y que su ejemplo llegue a los hombres de su entorno.",
+    "estrategias": [
+      {
+        "estrategia": "Presentar la intermedia como continuidad de su participación de 2024",
+        "canal": "Redes sociales, escuelas y mercados; campañas de la intermedia",
+        "indicador": "Participación del perfil en 2027 contra 51.6% en 2021"
+      },
+      {
+        "estrategia": "\"Vota y lleva a alguien\": promotoras del voto en el hogar y la comunidad",
+        "canal": "Redes comunitarias en Ciudad de México, Baja California, Chihuahua y Tlaxcala",
+        "indicador": "Participación de los hombres de 18 a 44 años en sus municipios"
+      }
+    ]
+  },
+  {
+    "id": "mujeres_0",
+    "orden": 5,
+    "nombre": "Mujeres de voto constante",
+    "sexo": "mujeres",
+    "color": "#D6517E",
+    "pct_lista_nominal": 23.48385258644041,
+    "pct_de_su_sexo": 45.1734304172636,
+    "trayectoria": [
+      {
+        "anio": 2009,
+        "participacion": 55.760628507210264
+      },
+      {
+        "anio": 2012,
+        "participacion": 69.26773746469622
+      },
+      {
+        "anio": 2015,
+        "participacion": 60.66323008916185
+      },
+      {
+        "anio": 2018,
+        "participacion": 67.91971034067262
+      },
+      {
+        "anio": 2021,
+        "participacion": 60.50624010021882
+      },
+      {
+        "anio": 2024,
+        "participacion": 65.40417789948796
+      }
+    ],
+    "judicial_2025": 14.011434914463866,
+    "nivel": 63.645427097445605,
+    "tendencia": 0.6076607911797706,
+    "ciclo": 8.215139401378167,
+    "ventaja": 8.53554530447766,
+    "rural": 27.353925183413367,
+    "etapas": [
+      {
+        "etapa": "18-24",
+        "pct": 12.902847402915047
+      },
+      {
+        "etapa": "25-34",
+        "pct": 18.798979581300003
+      },
+      {
+        "etapa": "35-44",
+        "pct": 20.1744594995951
+      },
+      {
+        "etapa": "45-59",
+        "pct": 29.946879736942556
+      },
+      {
+        "etapa": "60-69",
+        "pct": 12.694494124944235
+      },
+      {
+        "etapa": "70+",
+        "pct": 5.482339654303062
+      }
+    ],
+    "entidades_principales": [
+      {
+        "clave": 6,
+        "nombre": "Colima",
+        "pct": 100.0
+      },
+      {
+        "clave": 19,
+        "nombre": "Nuevo León",
+        "pct": 98.5604352784174
+      },
+      {
+        "clave": 4,
+        "nombre": "Campeche",
+        "pct": 98.26490499471382
+      },
+      {
+        "clave": 22,
+        "nombre": "Querétaro",
+        "pct": 95.9683639813208
+      },
+      {
+        "clave": 26,
+        "nombre": "Sonora",
+        "pct": 93.80202291640741
+      }
+    ],
+    "resumen": "Mujeres de todas las edades que votan en cualquier tipo de elección, en ciudades y en el campo.",
+    "quienes": "El 45% de las mujeres, de todas las edades, con más peso entre los 45 y los 59 años. Una de cada cuatro vive en secciones rurales: aquí está la mayoría de las mujeres rurales del país.",
+    "como_votan": "Promedio de 63.6%, sin tendencia (+0.6) y con un ciclo bajo (+8.2 puntos). No bajan de 55%, ni en las intermedias. Votan 8.5 puntos más que los hombres de su edad y municipio: es donde la brecha es más amplia.",
+    "donde": "Colima (100% de las mujeres), Nuevo León (99%), Campeche (98%), Querétaro (96%) y Sonora (94%).",
+    "lectura": "Es el núcleo estable del electorado: vota por hábito, no por coyuntura. Las cinco entidades donde más pesa eligieron gubernatura en las intermedias de 2015 y 2021, lo que sugiere que una elección local el mismo día ayuda a sostener su voto.",
+    "objetivo": "Mantener su nivel con poca inversión, aprovecharlas como puente con las generaciones jóvenes y cuidar las condiciones de voto en lo rural.",
+    "estrategias": [
+      {
+        "estrategia": "Recordatorios de bajo costo que reconozcan su constancia",
+        "canal": "Medios tradicionales y redes; la semana de la elección",
+        "indicador": "Mantener su nivel por encima del 63%"
+      },
+      {
+        "estrategia": "Invitarlas a ser funcionarias de casilla, observadoras o promotoras con los jóvenes de su familia",
+        "canal": "Capacitación electoral del INE y centros comunitarios; reclutamiento previo a la jornada",
+        "indicador": "Participación de las personas de 18 a 34 años en sus municipios"
+      },
+      {
+        "estrategia": "Garantizar casillas cercanas y materiales en lenguas indígenas en las secciones rurales, donde vive una de cada cuatro",
+        "canal": "Juntas Locales y Distritales; planeación de casillas",
+        "indicador": "Participación del perfil en secciones rurales"
+      }
+    ]
+  }
+]
