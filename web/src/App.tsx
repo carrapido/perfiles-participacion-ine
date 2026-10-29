@@ -39,7 +39,7 @@ export default function App() {
     <>
       <header>
         <h1>Perfiles de participación ciudadana</h1>
-        <p>Equipo Utrinos: Jorge González Mollinedo y Brandon Campos Buendía</p>
+        <p>Equipo Utrinos</p>
       </header>
       <main>
         <Suspense fallback={<p>Cargando el mapa…</p>}>
