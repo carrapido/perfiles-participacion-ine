@@ -4,6 +4,8 @@ Proyecto del equipo **Utrinos** para el Reto 1 del hackatón del INE "Hackea la 
 
 Agrupa a la ciudadanía en cinco perfiles de participación electoral con los Conteos Censales de Participación Ciudadana (CCPC) del INE de las elecciones federales de 2009 a 2024, y los valida con la elección judicial de 2025. Incluye un sitio web con un mapa de México por municipio, un panel que cambia con el zoom y una ficha por perfil.
 
+**Sitio:** https://carrapido.github.io/perfiles-participacion-ine/
+
 ## Metodología en breve
 
 - **Unidad de análisis:** la celda municipio × sexo × etapa de vida (18-24, 25-34, 35-44, 45-59, 60-69 y 70 o más).
