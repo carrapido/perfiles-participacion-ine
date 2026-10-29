@@ -30,7 +30,8 @@ def guardar_perfiles(datos: Datos, k_mujeres: int, k_hombres: int) -> None:
     resumen, asignacion = describir_perfiles(datos, k_mujeres, k_hombres, judicial)
     with pd.option_context("display.width", 320, "display.max_columns", 60):
         print(resumen.round(1).to_string(index=False))
-    resumen.round(2).to_csv(f"{SALIDA}/perfiles_resumen_k{k_mujeres}_{k_hombres}.csv", index=False)
+    # Sin redondear: las cifras se redondean una sola vez, al mostrarlas; redondear dos veces cambia algunas
+    resumen.to_csv(f"{SALIDA}/perfiles_resumen_k{k_mujeres}_{k_hombres}.csv", index=False)
     asignacion.to_csv(f"{SALIDA}/celdas_k{k_mujeres}_{k_hombres}.csv", index=False)
 
 
