@@ -1,0 +1,40 @@
+.leyenda {
+  max-width: 420px;
+  margin-top: 8px;
+  font-size: 0.8125rem;
+}
+
+.leyenda__titulo {
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.leyenda__barra {
+  height: 12px;
+}
+
+.leyenda__marcas,
+.leyenda__lados {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leyenda__marcas {
+  font-variant-numeric: tabular-nums;
+}
+
+.leyenda__lados {
+  margin-top: 2px;
+}
+
+.leyenda__sin-datos {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 0;
+}
+
+.leyenda__muestra {
+  width: 12px;
+  height: 12px;
+}

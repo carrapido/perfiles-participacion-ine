@@ -1,0 +1,41 @@
+.mapa {
+  margin: 0;
+}
+
+/* Con el alto topado, el viewBox centra el mapa a lo ancho (preserveAspectRatio por omisión) */
+.mapa__lienzo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+}
+
+.mapa__fondo {
+  fill: transparent;
+}
+
+/* vector-effect: el grosor del borde se queda igual en pantalla aunque el grupo tenga zoom */
+.mapa__municipio {
+  stroke: var(--color-fondo);
+  stroke-width: 0.25;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+}
+
+.mapa__municipio:hover {
+  stroke: var(--color-texto);
+  stroke-width: 1.5;
+}
+
+.mapa__bordes {
+  fill: none;
+  stroke: var(--color-texto);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.mapa__fuente {
+  margin-top: 12px;
+  font-size: 0.8125rem;
+}

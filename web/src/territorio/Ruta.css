@@ -1,0 +1,42 @@
+.ruta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 36px;
+}
+
+.ruta__pasos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 600;
+}
+
+.ruta__pasos li + li::before {
+  content: '›';
+  padding: 0 8px;
+}
+
+.ruta__enlace {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ruta__volver {
+  padding: 6px 12px;
+  border: 1px solid var(--color-texto);
+  border-radius: 4px;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font: inherit;
+  cursor: pointer;
+}
