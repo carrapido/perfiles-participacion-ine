@@ -254,5 +254,12 @@ def participacion_agregada(conteos: pd.DataFrame, celdas: pd.Index) -> float:
 def concentracion_por_entidad(peso_grupo: pd.Series, peso_sexo: pd.Series, entidades: int = 5) -> str:
     """Entidades donde el perfil abarca más de su sexo, como 'clave:porcentaje'."""
     por_entidad = 100 * peso_grupo.groupby(level=0).sum() / peso_sexo.groupby(level=0).sum()
-    principales = por_entidad.sort_values(ascending=False).head(entidades)
+    principales = mayores_primero(por_entidad, entidades)
     return ", ".join(f"{int(entidad)}:{pct:.0f}%" for entidad, pct in principales.items())
+
+
+def mayores_primero(valores: pd.Series, cuantos: int) -> pd.Series:
+    """Los `cuantos` valores más altos; los empates, de menor a mayor clave.
+    sort_values usa quicksort, que no es estable: sin ordenar antes por clave, pandas 3.1 y pandas 2.2 (el de Colab)
+    acomodaban distinto los empates. Un ordenamiento estable conserva el orden previo de los empates."""
+    return valores.sort_index().sort_values(ascending=False, kind="stable").head(cuantos)

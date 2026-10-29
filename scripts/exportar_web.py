@@ -15,7 +15,7 @@ from agregar_ccpc import GRUPOS as GRUPOS_DE_EDAD
 # Python busca los módulos en sys.path, que al correr un script solo incluye la carpeta del script (scripts/)
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from segmentacion import (ANIOS, CLAVES_DE_CELDA, ETAPAS, HOMBRES, MUJERES, SEXOS, VARIABLES, cargar_celdas,
-                          tasa_de_participacion)
+                          mayores_primero, tasa_de_participacion)
 
 AGREGADOS, RESULTADOS = "data/agregados", "data/resultados/por_sexo"
 DESTINO = Path("web/public/data")
@@ -118,7 +118,7 @@ def describir_perfil(texto: dict, fila: pd.Series, reparto: pd.Series) -> dict:
 
 def entidades_principales(reparto: pd.Series, perfil: str) -> list[dict]:
     pct_por_entidad = reparto.xs(perfil, level="perfil_sexo").droplevel("SEXO")
-    principales = pct_por_entidad.sort_values(ascending=False).head(ENTIDADES_PRINCIPALES)
+    principales = mayores_primero(pct_por_entidad, ENTIDADES_PRINCIPALES)
     return [{"clave": clave, "nombre": ENTIDADES[clave], "pct": pct} for clave, pct in principales.items()]
 
 

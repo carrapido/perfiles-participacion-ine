@@ -418,13 +418,13 @@
     ],
     "entidades_principales": [
       {
-        "clave": 9,
-        "nombre": "Ciudad de México",
+        "clave": 2,
+        "nombre": "Baja California",
         "pct": 100.0
       },
       {
-        "clave": 2,
-        "nombre": "Baja California",
+        "clave": 9,
+        "nombre": "Ciudad de México",
         "pct": 100.0
       },
       {
