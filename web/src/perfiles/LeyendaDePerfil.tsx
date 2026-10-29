@@ -5,7 +5,7 @@ import type { Perfil, Sexo } from '../datos/datosDelMapa.ts'
 import './LeyendaDePerfil.css'
 
 interface Props {
-  perfiles: Perfil[]
+  perfiles: readonly Perfil[]
   sexo: Sexo
 }
 

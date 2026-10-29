@@ -4,9 +4,12 @@ export interface Municipio {
   entidad: number
   municipio: number
   nombre: string
-  brecha: (number | null)[] // alineada con `elecciones`
-  perfil_principal: { mujeres: string | null; hombres: string | null } | null
+  brecha: readonly (number | null)[] // alineada con `elecciones`
+  perfil_principal: PerfilPrincipal | null // null: el modelo no tiene celdas en el municipio
 }
+
+/** Id del perfil con más lista nominal 2024 de cada sexo; null si el modelo no tiene celdas de ese sexo. */
+export type PerfilPrincipal = Record<Sexo, string | null>
 
 export type TopologiaDeMexico = Topology<{
   municipios: GeometryCollection<{ entidad: number; municipio: number }>
@@ -16,10 +19,13 @@ export type TopologiaDeMexico = Topology<{
 export interface Entidad {
   clave: number
   nombre: string
+  participacion: readonly ResultadoPorSexo[] // Campeche no tiene la judicial
+  reparto: Readonly<Record<string, number>> // id del perfil → % de la lista nominal 2024 de su sexo en la entidad
+  perfil_principal: PerfilPrincipal
 }
 
-/** Participación nacional por sexo en una elección, en porcentaje; la brecha es mujeres − hombres. */
-export interface ResultadoNacional {
+/** Participación por sexo en una elección, en porcentaje; la brecha es mujeres − hombres. */
+export interface ResultadoPorSexo {
   anio: number
   tipo: 'federal' | 'judicial'
   mujeres: number
@@ -29,6 +35,8 @@ export interface ResultadoNacional {
 
 export type Sexo = 'mujeres' | 'hombres'
 
+export const SEXOS: readonly Sexo[] = ['mujeres', 'hombres'] // el orden en que el sitio los muestra
+
 /** Solo los campos que usa el sitio hasta ahora; perfiles.json trae también etapas, textos y estrategias. */
 export interface Perfil {
   id: string // como en celdas_k2_3.csv: mujeres_0, hombres_1…
@@ -36,29 +44,29 @@ export interface Perfil {
   nombre: string
   sexo: Sexo
   color: string
-  trayectoria: { anio: number; participacion: number }[]
+  trayectoria: readonly { anio: number; participacion: number }[]
   judicial_2025: number
 }
 
 /** Brecha por grupo de edad de un ámbito; la judicial es null en Campeche, que no tiene datos. */
 export interface CurvasDeBrecha {
-  federal_2024: (number | null)[]
-  judicial_2025: (number | null)[] | null
+  federal_2024: readonly (number | null)[]
+  judicial_2025: readonly (number | null)[] | null
 }
 
 export interface BrechaPorEdad {
-  grupos_de_edad: string[]
-  ambitos: (CurvasDeBrecha & { clave: number; nombre: string })[] // clave 0: el total nacional
+  grupos_de_edad: readonly string[]
+  ambitos: readonly (CurvasDeBrecha & { clave: number; nombre: string })[] // clave 0: el total nacional
 }
 
 export interface DatosDelMapa {
   topologia: TopologiaDeMexico
-  perfiles: Perfil[]
-  nacional: ResultadoNacional[]
+  perfiles: readonly Perfil[]
+  nacional: readonly ResultadoPorSexo[]
   brechaPorEdad: BrechaPorEdad
-  entidades: Entidad[]
-  elecciones: number[]
-  municipios: Municipio[]
+  entidades: readonly Entidad[]
+  elecciones: readonly number[]
+  municipios: readonly Municipio[]
 }
 
 /** Un municipio se identifica por su entidad y su clave del INE: la clave de municipio se repite entre entidades. */
@@ -74,7 +82,7 @@ export async function cargarDatosDelMapa(): Promise<CargaDelMapa> {
     const [topologia, perfiles, nacional, brechaPorEdad, entidades, { elecciones, municipios }] = await Promise.all([
       leerJson<TopologiaDeMexico>('mexico.topo.json'),
       leerJson<Perfil[]>('perfiles.json'),
-      leerJson<ResultadoNacional[]>('nacional.json'),
+      leerJson<ResultadoPorSexo[]>('nacional.json'),
       leerJson<BrechaPorEdad>('brecha_edad.json'),
       leerJson<Entidad[]>('entidades.json'),
       leerJson<Pick<DatosDelMapa, 'elecciones' | 'municipios'>>('municipios.json'),

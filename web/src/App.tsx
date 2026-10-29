@@ -6,7 +6,7 @@ import { sexoConArticulo } from './compartido/sexoConArticulo.ts'
 import { cargarDatosDelMapa, type DatosDelMapa, type Sexo } from './datos/datosDelMapa.ts'
 import { nombreDeEleccion, opcionesDeEleccion } from './datos/elecciones.ts'
 import { buscadorDeNombres } from './datos/nombres.ts'
-import { PanelNacional } from './panel/PanelNacional.tsx'
+import { Panel } from './panel/Panel.tsx'
 import { colorearPorPerfil } from './perfiles/capaDePerfil.ts'
 import { LeyendaDePerfil } from './perfiles/LeyendaDePerfil.tsx'
 import type { MunicipioTrazado } from './territorio/geometriaDelMapa.ts'
@@ -98,7 +98,7 @@ function Explorador({ datos }: { datos: DatosDelMapa }) {
           )}
         </MapaMexico>
       </div>
-      <PanelNacional datos={datos} />
+      <Panel datos={datos} nivelDeZoom={nivelDeZoom} nombres={nombres} />
     </div>
   )
 }

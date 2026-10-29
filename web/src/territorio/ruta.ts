@@ -1,5 +1,7 @@
 import { NACIONAL, type NivelDeZoom } from './nivelDeZoom.ts'
 
+export const NOMBRE_DEL_PAIS = 'México'
+
 export interface PasoDeLaRuta {
   etiqueta: string
   destino: NivelDeZoom
@@ -11,7 +13,7 @@ export function pasosDeLaRuta(
   nombreDeEntidad: (entidad: number) => string,
   nombreDeMunicipio: (entidad: number, municipio: number) => string,
 ): PasoDeLaRuta[] {
-  const pasos: PasoDeLaRuta[] = [{ etiqueta: 'México', destino: NACIONAL }]
+  const pasos: PasoDeLaRuta[] = [{ etiqueta: NOMBRE_DEL_PAIS, destino: NACIONAL }]
   if (nivelDeZoom.nivel === 'nacional') return pasos
   const { entidad } = nivelDeZoom
   pasos.push({ etiqueta: nombreDeEntidad(entidad), destino: { nivel: 'entidad', entidad } })
